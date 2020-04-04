@@ -32,11 +32,33 @@ body {
   }
 }
 
-main {
+@media only print {
+  body {
+    font-size: 0.8em;
+  }
+}
+
+header {
   border-top: 8px solid $highlight;
-  border-bottom: 8px solid $highlight;
   padding-top: 8px;
+}
+
+footer {
+  border-bottom: 8px solid $highlight;
   padding-bottom: 8px;
+}
+
+a {
+  transition: 0.2s color;
+  color: $highlight;
+
+  &:visited {
+    color: inherit;
+  }
+
+  &:hover {
+    color: $highlight-dark;
+  }
 }
 
 .date {
@@ -204,13 +226,13 @@ section {
   flex-direction: row;
 
   .sidebar {
-    flex: 1 1 25%;
+    flex: 1 1 30%;
     display: inline-flex;
     flex-direction: column;
   }
 
   .main {
-    flex: 1 1 75%;
+    flex: 1 1 70%;
   }
 
   margin-bottom: 1em;
@@ -255,10 +277,13 @@ section {
 }
 
 .awards {
+  font-size: 0.9em;
+
   .awards-item {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
+
   .award {
     margin: 0.6em;
     display: flex;
@@ -298,6 +323,16 @@ section {
 
 .interests {
   .interests-item {
+    @extend .collapsible;
+
+    .name {
+      font-weight: 600;
+    }
+  }
+}
+
+.projects {
+  .projects-item {
     @extend .collapsible;
 
     .name {

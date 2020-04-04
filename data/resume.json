@@ -165,13 +165,21 @@
       "summary": "Awarded for contributions to the local community, including volunteer trips to local villages and co-leading the student council"
     }
   ],
-  "publications": [
+  "projects": [
     {
-      "name": "Publication",
-      "publisher": "Company",
-      "releaseDate": "2014-10-01",
-      "website": "http://publication.com",
-      "summary": "Description..."
+      "name": "bhamcal",
+      "website": "github.com/jedevc/bhamcal",
+      "summary": "Timetable extractor and converter for University of Birmingham web timetables."
+    },
+    {
+      "name": "mafs",
+      "website": "github.com/jedevc/mafs",
+      "summary": "Python wrapper for FUSE allowing easy creation of virtual filesystems."
+    },
+    {
+      "name": "rngback",
+      "website": "github.com/jedevc/rngback",
+      "summary": "Command-line utility for randomly generating geometric wallpapers and backgrounds."
     }
   ],
   "skills": [
@@ -221,12 +229,6 @@
     {
       "name": "Food",
       "summary": "I'm always up for trying new food, and regularly try and find new places to eat out. I also really enjoy cooking at home for fun!"
-    }
-  ],
-  "references": [
-    {
-      "name": "Jane Doe",
-      "reference": "Reference..."
     }
   ]
 }

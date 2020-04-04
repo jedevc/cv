@@ -71,6 +71,30 @@
         {{ end }}
     </section>
 
+    <section class="projects">
+        <h2 class="header">Projects</h2>
+        {{ range .Site.Data.resume.projects }}
+            <div class="projects-item">
+                <div class="sidebar">
+                    <span class="name">{{ .name }}</span>
+                    {{ with .website }}
+                        <a href="{{ . }}" class="website">{{ . }}</a>
+                    {{ end }}
+                    <div class="keywords">
+                        {{ range .keywords }}
+                            <span class="keyword">{{ . }}</span>
+                        {{ end }}
+                    </div>
+                </div>
+                <div class="main">
+                    {{ with .summary }}
+                        <div class="summary">{{ . }}</div>
+                    {{ end }}
+                </div>
+            </div>
+        {{ end }}
+    </section>
+
     <section class="work">
         <h2 class="header">Work</h2>
         {{ range .Site.Data.resume.work }}
@@ -142,7 +166,7 @@
     </section>
 
     <section class="interests">
-        <h2 class="header">interests</h2>
+        <h2 class="header">Interests</h2>
         {{ range .Site.Data.resume.interests }}
             <div class="interests-item">
                 <div class="sidebar">
