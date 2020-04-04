@@ -26,14 +26,14 @@
         {{ end }}
     </section>
 
-    <section>
+    <section class="education">
         <h2 class="header">Education</h2>
         {{ range .Site.Data.resume.education }}
-            <div class="education">
+            <div class="education-item">
                 <div class="sidebar">
-                    <span class="education-item course">{{ .area }} {{ .studyType }}</span>
-                    <span class="education-item institution">{{ .institution }}</span>
-                    <span class="education-item date">
+                    <span class="course">{{ .area }} {{ .studyType }}</span>
+                    <span class="institution">{{ .institution }}</span>
+                    <span class="date">
                         <span class="start-date">{{ dateFormat "Jan 2006" .startDate }}</span>
                         <span class="end-date">{{ dateFormat "Jan 2006" .endDate }}</span>
                     </span>
@@ -54,24 +54,24 @@
         {{ end }}
     </section>
 
-    <section>
+    <section class="work">
         <h2 class="header">Work</h2>
         {{ range .Site.Data.resume.work }}
-            <div class="work">
+            <div class="work-item">
                 <div class="sidebar">
-                    <span class="work-item company">{{ .company }}</span>
-                    <span class="work-item position">{{ .position }}</span>
-                    <span class="work-item date">
+                    <span class="company">{{ .company }}</span>
+                    <span class="position">{{ .position }}</span>
+                    <span class="date">
                         <span class="start-date">{{ dateFormat "Jan 2006" .startDate }}</span>
                         <span class="end-date">{{ dateFormat "Jan 2006" .endDate }}</span>
                     </span>
                 </div>
                 <div class="main">
                     {{ with .summary }}
-                        <div class="work-item summary">{{ . }}</div>
+                        <div class="summary">{{ . }}</div>
                     {{ end }}
                     {{ with .highlights }}
-                        <ol class="work-item highlights">
+                        <ol class="highlights">
                             {{ range . }}
                                 <li>{{ . }}</li>
                             {{ end }}
@@ -82,24 +82,24 @@
         {{ end }}
     </section>
 
-    <section>
+    <section class="work">
         <h2 class="header">Volunteering</h2>
         {{ range .Site.Data.resume.volunteer }}
-            <div class="work">
+            <div class="work-item">
                 <div class="sidebar">
-                    <span class="work-item company">{{ .organization }}</span>
-                    <span class="work-item position">{{ .position }}</span>
-                    <span class="work-item date">
+                    <span class="company">{{ .organization }}</span>
+                    <span class="position">{{ .position }}</span>
+                    <span class="date">
                         <span class="start-date">{{ dateFormat "Jan 2006" .startDate }}</span>
                         <span class="end-date">{{ dateFormat "Jan 2006" .endDate }}</span>
                     </span>
                 </div>
                 <div class="main">
                     {{ with .summary }}
-                        <div class="work-item summary">{{ . }}</div>
+                        <div class="summary">{{ . }}</div>
                     {{ end }}
                     {{ with .highlights }}
-                        <ol class="work-item highlights">
+                        <ol class="highlights">
                             {{ range . }}
                                 <li>{{ . }}</span>
                             {{ end }}
@@ -110,9 +110,9 @@
         {{ end }}
     </section>
 
-    <section>
+    <section class="awards">
         <h2 class="header">Awards</h2>
-        <div class="awards">
+        <div class="awards-item">
         {{ range .Site.Data.resume.awards }}
             <div class="award">
                 <span class="award-item title">{{ .title }}</span>

@@ -119,52 +119,46 @@ section {
 }
 
 .education {
-  @extend .collapsible;
+  .education-item {
+    @extend .collapsible;
 
-  .course {
-    font-weight: 600;
-  }
+    .course {
+      font-weight: 600;
+    }
 
-  .institution {
-    font-style: italic;
-  }
+    .institution {
+      font-style: italic;
+    }
 
-  .courses {
-    list-style-type: disc;
-    list-style: outside;
-    padding-left: 1em;
+    .courses {
+      list-style-type: disc;
+      list-style: outside;
+      padding-left: 1em;
+    }
   }
 }
 
 .work {
-  @extend .collapsible;
+  .work-item {
+    @extend .collapsible;
 
-  .company {
-    font-weight: 600;
-  }
+    .company {
+      font-weight: 600;
+    }
 
-  .position {
-    font-style: italic;
-  }
+    .position {
+      font-style: italic;
+    }
 
-  .summary {
-    text-indent: 1em;
-    margin-bottom: 0.8em;
-  }
+    .summary {
+      text-indent: 1em;
+      margin-bottom: 0.8em;
+    }
 
-  .highlights {
-    list-style-position: outside;
-    list-style-type: disc;
-    padding-left: 1em;
-  }
-}
-
-@media only screen and (max-width: 800px) {
-  .work {
-    flex-direction: column;
-
-    .information {
-      display: inline;
+    .highlights {
+      list-style-position: outside;
+      list-style-type: disc;
+      padding-left: 1em;
     }
   }
 }
@@ -225,40 +219,42 @@ section {
 }
 
 .awards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-.award {
-  margin: 0.6em;
-  display: flex;
-  flex-direction: column;
-
-  .title {
-    font-weight: 600;
-  }
-
-  .awarder {
-    font-style: italic;
-  }
-
-  .summary {
-    padding-top: 0.6em;
-  }
-
-  border: 1px solid #ddd;
-  padding: 1em;
-}
-
-@media only screen and (max-width: 800px) {
-  .awards {
-    grid-template-columns: 1fr;
+  .awards-item {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
   .award {
-    display: inline;
+    margin: 0.6em;
+    display: flex;
+    flex-direction: column;
 
-    & > * {
-      &:not(:last-child)::after {
-        // content: ".";
+    .title {
+      font-weight: 600;
+    }
+
+    .awarder {
+      font-style: italic;
+    }
+
+    .summary {
+      padding-top: 0.6em;
+    }
+
+    border: 1px solid #ddd;
+    padding: 1em;
+  }
+
+  @media only screen and (max-width: 800px) {
+    .awards {
+      grid-template-columns: 1fr;
+    }
+    .award {
+      display: inline;
+
+      & > * {
+        &:not(:last-child)::after {
+          // content: ".";
+        }
       }
     }
   }
