@@ -183,6 +183,30 @@
         "CSS",
         "Javascript"
       ]
+    },
+    {
+      "name": "Scripting",
+      "level": "Intermediate",
+      "keywords": [
+        "Python",
+        "Bash"
+      ]
+    },
+    {
+      "name": "Security",
+      "level": "Intermediate",
+      "keywords": [
+        "Exploitation",
+        "Reverse Engineering",
+        "Linux"
+      ]
+    },
+    {
+      "name": "Leadership",
+      "keywords": [
+        "Event organization",
+        "Tech lead"
+      ]
     }
   ],
   "languages": [
