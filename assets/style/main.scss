@@ -32,20 +32,36 @@ body {
   }
 }
 
+header {
+  width: 100%;
+  height: 8px;
+  background: $highlight;
+  margin-top: 8px;
+}
+
+footer {
+  width: 100%;
+  height: 8px;
+  background: $highlight;
+  margin-bottom: 8px;
+}
+
 @media only print {
   body {
     font-size: 0.8em;
   }
-}
 
-header {
-  border-top: 8px solid $highlight;
-  padding-top: 8px;
-}
+  header {
+    position: fixed;
+    margin: 0;
+    top: 0;
+  }
 
-footer {
-  border-bottom: 8px solid $highlight;
-  padding-bottom: 8px;
+  footer {
+    position: fixed;
+    margin: 0;
+    bottom: 0;
+  }
 }
 
 a {
@@ -142,6 +158,9 @@ section {
   margin-top: 1em;
   margin-bottom: 1em;
   padding-top: 1em;
+
+  break-inside: avoid;
+
   &:not(:first-child) {
     border-top: 1px solid #ddd;
   }
