@@ -5,7 +5,7 @@
 {{ end }}
 
 {{ define "main" }}
-    <section>
+    <section class="basics">
         {{ with .Site.Data.resume.basics }}
             <h1 class="name">{{ .name }}</h1>
             <div class="contact">
@@ -19,6 +19,10 @@
                 <span class="location-item post-code">{{ .location.postalCode }}</span>
                 <span class="location-item country-code">{{ .location.countryCode }}</span>
             </div>
+
+            {{ with .summary }}
+                <p class="summary">{{ . }}</p>
+            {{ end }}
         {{ end }}
     </section>
 

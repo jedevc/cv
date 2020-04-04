@@ -39,10 +39,6 @@ main {
   padding-bottom: 8px;
 }
 
-.name {
-  text-align: center;
-}
-
 .date {
   display: inline-flex;
 
@@ -64,30 +60,47 @@ main {
   }
 }
 
-.contact {
+.basics {
   text-align: center;
 
-  color: #666;
-  font-style: italic;
+  .contact {
+    color: #666;
+    font-style: italic;
 
-  .contact-item::after {
-    content: " • ";
+    .contact-item::after {
+      content: " • ";
+    }
+    .contact-item:last-child::after {
+      content: "";
+    }
   }
-  .contact-item:last-child::after {
-    content: "";
+
+  .location {
+    color: #666;
+
+    .location-item::after {
+      content: ", ";
+    }
+    .location-item:last-child::after {
+      content: "";
+    }
+  }
+
+  .summary {
+    margin-top: 1em;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
-.location {
-  text-align: center;
+@media only screen and (max-width: 800px) {
+  .basics {
+    text-align: left;
 
-  color: #666;
-
-  .location-item::after {
-    content: ", ";
-  }
-  .location-item:last-child::after {
-    content: "";
+    .summary {
+      width: 100%;
+    }
   }
 }
 
@@ -206,7 +219,7 @@ section {
   animation-fill-mode: backwards;
   @for $i from 0 through 10 {
     &:nth-child(#{$i}n) {
-        animation-delay: #{$i * 0.1}s;
+      animation-delay: #{$i * 0.1}s;
     }
   }
 }
