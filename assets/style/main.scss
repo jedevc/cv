@@ -128,11 +128,13 @@ a {
   .location {
     color: #666;
 
-    .location-item::after {
-      content: ", ";
-    }
-    .location-item:last-child::after {
-      content: "";
+    & > * {
+      &::after {
+        content: ", ";
+      }
+      &:last-child::after {
+        content: "";
+      }
     }
   }
 
