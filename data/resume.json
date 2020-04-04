@@ -87,6 +87,19 @@
   ],
   "work": [
     {
+      "company": "Progressive Accessibility Solutions",
+      "position": "Front-end Engineer",
+      "website": "https://progressiveaccess.com",
+      "startDate": "2019-11-01",
+      "endDate": "2019-11-01",
+      "summary": "",
+      "highlights": [
+        "Designed and created a new website from scratch to represent the face of the company.",
+        "Designed for adaptive screen sizes, including mobile, and ensured an accessibility friendly layout.",
+        "Setup Headless CMS and engineered CI/CD pipelines to facilitate automation."
+      ]
+    },
+    {
       "company": "ARM",
       "position": "Open Source Software Intern",
       "website": "https://www.arm.com/",
