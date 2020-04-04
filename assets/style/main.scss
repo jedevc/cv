@@ -216,6 +216,28 @@ section {
   }
 }
 
+@media only screen {
+  body {
+    margin-top: 4em;
+    margin-bottom: 4em;
+  }
+
+  .fadeout {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+    background: linear-gradient(
+        #ffff 0%,
+        #0000 5%,
+        #0000 95%,
+        #ffff 100%
+    ); 
+  }
+}
+
 @media only screen and (max-width: 800px) {
   .basics {
     text-align: left;
