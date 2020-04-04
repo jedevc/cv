@@ -110,6 +110,39 @@ a {
   line-height: 2em;
 }
 
+.collapsible {
+  display: flex;
+  flex-direction: row;
+
+  .sidebar {
+    flex: 1 1 30%;
+    display: inline-flex;
+    flex-direction: column;
+  }
+
+  .main {
+    flex: 1 1 70%;
+  }
+
+  margin-bottom: 1em;
+}
+
+@media only screen and (max-width: 800px) {
+  .collapsible {
+    flex-direction: column;
+
+    .sidebar {
+      display: inline;
+
+      & > * {
+        &:not(:last-child)::after {
+          content: ".";
+        }
+      }
+    }
+  }
+}
+
 .basics {
   text-align: center;
 
@@ -146,22 +179,21 @@ a {
   }
 }
 
-@media only screen and (max-width: 800px) {
-  .basics {
-    text-align: left;
-
-    .summary {
-      width: 100%;
-    }
-  }
-}
-
 section {
   margin-top: 1em;
   margin-bottom: 1em;
   padding-top: 1em;
 
   break-inside: avoid;
+
+  animation-name: slideIn;
+  animation-duration: 0.4s;
+  animation-fill-mode: backwards;
+  @for $i from 0 through 10 {
+    &:nth-child(#{$i}n) {
+      animation-delay: #{$i * 0.1}s;
+    }
+  }
 
   &:not(:first-child) {
     border-top: 1px solid #ddd;
@@ -170,6 +202,27 @@ section {
   .header {
     font-variant: small-caps;
     color: $highlight;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .basics {
+    text-align: left;
+
+    .summary {
+      width: 100%;
+    }
   }
 }
 
@@ -248,61 +301,6 @@ section {
       list-style-position: outside;
       list-style-type: disc;
       padding-left: 1em;
-    }
-  }
-}
-
-.collapsible {
-  display: flex;
-  flex-direction: row;
-
-  .sidebar {
-    flex: 1 1 30%;
-    display: inline-flex;
-    flex-direction: column;
-  }
-
-  .main {
-    flex: 1 1 70%;
-  }
-
-  margin-bottom: 1em;
-}
-
-@media only screen and (max-width: 800px) {
-  .collapsible {
-    flex-direction: column;
-
-    .sidebar {
-      display: inline;
-
-      & > * {
-        &:not(:last-child)::after {
-          content: ".";
-        }
-      }
-    }
-  }
-}
-
-@keyframes slideIn {
-  0% {
-    transform: translateX(-100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-section {
-  animation-name: slideIn;
-  animation-duration: 0.4s;
-  animation-fill-mode: backwards;
-  @for $i from 0 through 10 {
-    &:nth-child(#{$i}n) {
-      animation-delay: #{$i * 0.1}s;
     }
   }
 }
