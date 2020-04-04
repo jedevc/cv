@@ -209,19 +209,18 @@
       ]
     }
   ],
-  "languages": [
-    {
-      "language": "English",
-      "fluency": "Native speaker"
-    }
-  ],
   "interests": [
     {
-      "name": "Wildlife",
-      "keywords": [
-        "Ferrets",
-        "Unicorns"
-      ]
+      "name": "Tech",
+      "summary": "A bit traditional and boring, but I enjoy tinkering with a number of techy projects at home while I have a few spare moments."
+    },
+    {
+      "name": "Travel",
+      "summary": "Having grown up overseas, I love international travel whenever I can!"
+    },
+    {
+      "name": "Food",
+      "summary": "I'm always up for trying new food, and regularly try and find new places to eat out. I also really enjoy cooking at home for fun!"
     }
   ],
   "references": [

@@ -141,5 +141,26 @@
         </div>
     </section>
 
+    <section class="interests">
+        <h2 class="header">interests</h2>
+        {{ range .Site.Data.resume.interests }}
+            <div class="interests-item">
+                <div class="sidebar">
+                    <span class="name">{{ .name }}</span>
+                    <div class="keywords">
+                        {{ range .keywords }}
+                            <span class="keyword">{{ . }}</span>
+                        {{ end }}
+                    </div>
+                </div>
+                <div class="main">
+                    {{ with .summary }}
+                        <div class="summary">{{ . }}</div>
+                    {{ end }}
+                </div>
+            </div>
+        {{ end }}
+    </section>
+
     {{ .Content }}
 {{ end }}

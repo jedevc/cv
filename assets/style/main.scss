@@ -60,6 +60,16 @@ main {
   }
 }
 
+.keyword {
+  background: $highlight;
+  padding-top: 0.1em;
+  padding-bottom: 0.1em;
+  padding-left: 0.4em;
+  padding-right: 0.4em;
+  border-radius: 0.5em;
+  color: #ddf;
+}
+
 .basics {
   text-align: center;
 
@@ -159,13 +169,6 @@ section {
 
     .keyword {
       display: inline;
-      background: $highlight;
-      padding-top: 0.1em;
-      padding-bottom: 0.1em;
-      padding-left: 0.4em;
-      padding-right: 0.4em;
-      border-radius: 0.5em;
-      color: #ddf;
       margin-right: 0.1em;
     }
   }
@@ -278,7 +281,7 @@ section {
   }
 
   @media only screen and (max-width: 800px) {
-    .awards {
+    .awards-item {
       grid-template-columns: 1fr;
     }
     .award {
@@ -289,6 +292,16 @@ section {
           // content: ".";
         }
       }
+    }
+  }
+}
+
+.interests {
+  .interests-item {
+    @extend .collapsible;
+
+    .name {
+      font-weight: 600;
     }
   }
 }
