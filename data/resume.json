@@ -6,7 +6,7 @@
     "email": "jedevc@gmail.com",
     "phone": "+44795611165",
     "website": "https://jedevc.com",
-    "summary": "Computer Science Student working on awesome projects",
+    "summary": "Computer Science Student working on awesome projects 🎉",
     "location": {
       "address": "Flat 6 Central Chambers, 416 Bearwood Road",
       "postalCode": "B66 4EY",
@@ -22,6 +22,104 @@
       }
     ]
   },
+  "education": [
+    {
+      "institution": "University of Birmingham",
+      "area": "Software Development",
+      "studyType": "BSc",
+      "startDate": "2011-01-01",
+      "endDate": "2013-01-01",
+      "summary": "Best modules:",
+      "courses": [
+        "[97%] Logic and Computation (1st year)",
+        "[99%] Programming in Java (1st year)",
+        "[95%] Mathematical Foundations (1st year)"
+      ]
+    },
+    {
+      "institution": "KISC",
+      "area": "",
+      "studyType": "A levels",
+      "startDate": "2017-08-01",
+      "endDate": "2018-05-01",
+      "courses": [
+        "[A*] Computer Science",
+        "[A*] Mathematics",
+        "[A] English Language"
+      ]
+    },
+    {
+      "institution": "KISC",
+      "area": "",
+      "studyType": "IGCSE",
+      "startDate": "2016-08-01",
+      "endDate": "2017-05-01",
+      "summary": "10 GCSEs, 9 A*s"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Web Development",
+      "level": "Intermediate",
+      "keywords": [
+        "HTML",
+        "CSS",
+        "Javascript"
+      ]
+    },
+    {
+      "name": "Scripting",
+      "level": "Intermediate",
+      "keywords": [
+        "Python",
+        "Bash"
+      ]
+    },
+    {
+      "name": "Security",
+      "level": "Intermediate",
+      "keywords": [
+        "Exploitation",
+        "Reverse Engineering",
+        "Linux"
+      ]
+    },
+    {
+      "name": "Leadership",
+      "keywords": [
+        "Event organization",
+        "Tech lead"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "bhamcal",
+      "website": "github.com/jedevc/bhamcal",
+      "summary": "Timetable extractor and converter for University of Birmingham web timetables.",
+      "keywords": [
+        "Python",
+        "Google Cloud"
+      ]
+    },
+    {
+      "name": "mafs",
+      "website": "github.com/jedevc/mafs",
+      "summary": "Python wrapper for FUSE allowing easy creation of virtual filesystems.",
+      "keywords": [
+        "Python",
+        "Linux"
+      ]
+    },
+    {
+      "name": "rngback",
+      "website": "github.com/jedevc/rngback",
+      "summary": "Command-line utility for randomly generating geometric wallpapers and backgrounds.",
+      "keywords": [
+        "Python"
+      ]
+    }
+  ],
   "work": [
     {
       "company": "ARM",
@@ -104,41 +202,6 @@
       ]
     }
   ],
-  "education": [
-    {
-      "institution": "University of Birmingham",
-      "area": "Software Development",
-      "studyType": "BSc",
-      "startDate": "2011-01-01",
-      "endDate": "2013-01-01",
-      "summary": "Best modules:",
-      "courses": [
-        "[97%] Logic and Computation (1st year)",
-        "[99%] Programming in Java (1st year)",
-        "[95%] Mathematical Foundations (1st year)"
-      ]
-    },
-    {
-      "institution": "KISC",
-      "area": "",
-      "studyType": "A levels",
-      "startDate": "2017-08-01",
-      "endDate": "2018-05-01",
-      "courses": [
-        "[A*] Computer Science",
-        "[A*] Mathematics",
-        "[A] English Language"
-      ]
-    },
-    {
-      "institution": "KISC",
-      "area": "",
-      "studyType": "IGCSE",
-      "startDate": "2016-08-01",
-      "endDate": "2017-05-01",
-      "summary": "10 GCSEs, 9 A*s"
-    }
-  ],
   "awards": [
     {
       "title": "Computer Science School Undergraduate Prize",
@@ -163,69 +226,6 @@
       "date": "2018-06-01",
       "awarder": "KISC",
       "summary": "Awarded for contributions to the local community, including volunteer trips to local villages and co-leading the student council"
-    }
-  ],
-  "projects": [
-    {
-      "name": "bhamcal",
-      "website": "github.com/jedevc/bhamcal",
-      "summary": "Timetable extractor and converter for University of Birmingham web timetables.",
-      "keywords": [
-        "Python",
-        "Google Cloud"
-      ]
-    },
-    {
-      "name": "mafs",
-      "website": "github.com/jedevc/mafs",
-      "summary": "Python wrapper for FUSE allowing easy creation of virtual filesystems.",
-      "keywords": [
-        "Python",
-        "Linux"
-      ]
-    },
-    {
-      "name": "rngback",
-      "website": "github.com/jedevc/rngback",
-      "summary": "Command-line utility for randomly generating geometric wallpapers and backgrounds.",
-      "keywords": [
-        "Python"
-      ]
-    }
-  ],
-  "skills": [
-    {
-      "name": "Web Development",
-      "level": "Intermediate",
-      "keywords": [
-        "HTML",
-        "CSS",
-        "Javascript"
-      ]
-    },
-    {
-      "name": "Scripting",
-      "level": "Intermediate",
-      "keywords": [
-        "Python",
-        "Bash"
-      ]
-    },
-    {
-      "name": "Security",
-      "level": "Intermediate",
-      "keywords": [
-        "Exploitation",
-        "Reverse Engineering",
-        "Linux"
-      ]
-    },
-    {
-      "name": "Leadership",
-      "keywords": [
-        "Event organization",
-        "Tech lead"
-      ]
     }
   ],
   "interests": [
