@@ -169,17 +169,28 @@
     {
       "name": "bhamcal",
       "website": "github.com/jedevc/bhamcal",
-      "summary": "Timetable extractor and converter for University of Birmingham web timetables."
+      "summary": "Timetable extractor and converter for University of Birmingham web timetables.",
+      "keywords": [
+        "Python",
+        "Google Cloud"
+      ]
     },
     {
       "name": "mafs",
       "website": "github.com/jedevc/mafs",
-      "summary": "Python wrapper for FUSE allowing easy creation of virtual filesystems."
+      "summary": "Python wrapper for FUSE allowing easy creation of virtual filesystems.",
+      "keywords": [
+        "Python",
+        "Linux"
+      ]
     },
     {
       "name": "rngback",
       "website": "github.com/jedevc/rngback",
-      "summary": "Command-line utility for randomly generating geometric wallpapers and backgrounds."
+      "summary": "Command-line utility for randomly generating geometric wallpapers and backgrounds.",
+      "keywords": [
+        "Python"
+      ]
     }
   ],
   "skills": [

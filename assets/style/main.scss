@@ -90,6 +90,8 @@ a {
   padding-right: 0.4em;
   border-radius: 0.5em;
   color: #ddf;
+
+  line-height: 2em;
 }
 
 .basics {
@@ -172,8 +174,6 @@ section {
 
 .skills {
   .skills-item {
-    line-height: 2em;
-
     .description {
       display: inline;
 
@@ -192,6 +192,16 @@ section {
     .keyword {
       display: inline;
       margin-right: 0.1em;
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .skills {
+    .skills-item {
+      .description {
+        display: block;
+      }
     }
   }
 }
