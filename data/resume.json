@@ -10,7 +10,7 @@
     "location": {
       "address": "Flat 6 Central Chambers, 416 Bearwood Road",
       "postalCode": "B66 4EY",
-      "city": "Smethwyck",
+      "city": "Smethwick",
       "countryCode": "UK",
       "region": "West Midlands"
     },
@@ -55,41 +55,6 @@
       "startDate": "2016-08-01",
       "endDate": "2017-05-01",
       "summary": "10 GCSEs, 9 A*s"
-    }
-  ],
-  "skills": [
-    {
-      "name": "Web Development",
-      "level": "Intermediate",
-      "keywords": [
-        "HTML",
-        "CSS",
-        "Javascript"
-      ]
-    },
-    {
-      "name": "Scripting",
-      "level": "Intermediate",
-      "keywords": [
-        "Python",
-        "Bash"
-      ]
-    },
-    {
-      "name": "Security",
-      "level": "Intermediate",
-      "keywords": [
-        "Exploitation",
-        "Reverse Engineering",
-        "Linux"
-      ]
-    },
-    {
-      "name": "Leadership",
-      "keywords": [
-        "Event organization",
-        "Tech lead"
-      ]
     }
   ],
   "projects": [
@@ -156,6 +121,41 @@
       "highlights": [
         "Worked with the Service Level Agreement team to deliver consistent, quality output.",
         "Constructed unit tests, documented internal APIs and generated monitoring graphs."
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "Web Development",
+      "level": "Intermediate",
+      "keywords": [
+        "HTML",
+        "CSS",
+        "Javascript"
+      ]
+    },
+    {
+      "name": "Scripting",
+      "level": "Intermediate",
+      "keywords": [
+        "Python",
+        "Bash"
+      ]
+    },
+    {
+      "name": "Security",
+      "level": "Intermediate",
+      "keywords": [
+        "Exploitation",
+        "Reverse Engineering",
+        "Linux"
+      ]
+    },
+    {
+      "name": "Leadership",
+      "keywords": [
+        "Event organization",
+        "Tech lead"
       ]
     }
   ],

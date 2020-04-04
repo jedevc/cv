@@ -54,23 +54,6 @@
         {{ end }}
     </section>
 
-    <section class="skills">
-        <h2 class="header">Skills</h2>
-        {{ range .Site.Data.resume.skills }}
-            <div class="skills-item">
-                <div class="description">
-                    <span class="name">{{ .name }}</span>
-                    {{ with .level }}
-                        <span class="level">{{ . }}</span>
-                    {{ end }}
-                </div>
-                {{ range .keywords }}
-                    <div class="keyword">{{ . }}</div>
-                {{ end }}
-            </div>
-        {{ end }}
-    </section>
-
     <section class="projects">
         <h2 class="header">Projects</h2>
         {{ range .Site.Data.resume.projects }}
@@ -122,6 +105,24 @@
             </div>
         {{ end }}
     </section>
+
+    <section class="skills">
+        <h2 class="header">Skills</h2>
+        {{ range .Site.Data.resume.skills }}
+            <div class="skills-item">
+                <div class="description">
+                    <span class="name">{{ .name }}</span>
+                    {{ with .level }}
+                        <span class="level">{{ . }}</span>
+                    {{ end }}
+                </div>
+                {{ range .keywords }}
+                    <div class="keyword">{{ . }}</div>
+                {{ end }}
+            </div>
+        {{ end }}
+    </section>
+
 
     <section class="work">
         <h2 class="header">Volunteering</h2>
