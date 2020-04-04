@@ -1,0 +1,124 @@
+{{ define "head" }}
+    {{ $sass := resources.Get "style/main.scss" }}
+    {{ $style := $sass | resources.ToCSS }}
+    <link rel="stylesheet" type="text/css" href="{{ $style.RelPermalink }}" />
+{{ end }}
+
+{{ define "main" }}
+    <section>
+        {{ with .Site.Data.resume.basics }}
+            <h1 class="name">{{ .name }}</h1>
+            <div class="contact">
+                <span class="contact-item email">{{ .email }}</span>
+                <span class="contact-item phone">{{ .phone }}</span>
+            </div>
+            <div class="location">
+                <span class="location-item address">{{ .location.address }}</span>
+                <span class="location-item city">{{ .location.city }}</span>
+                <span class="location-item region">{{ .location.region }}</span>
+                <span class="location-item post-code">{{ .location.postalCode }}</span>
+                <span class="location-item country-code">{{ .location.countryCode }}</span>
+            </div>
+        {{ end }}
+    </section>
+
+    <section>
+        <h2 class="header">Education</h2>
+        {{ range .Site.Data.resume.education }}
+            <div class="education">
+                <div class="sidebar">
+                    <span class="education-item course">{{ .area }} {{ .studyType }}</span>
+                    <span class="education-item institution">{{ .institution }}</span>
+                    <span class="education-item date">
+                        <span class="start-date">{{ dateFormat "Jan 2006" .startDate }}</span>
+                        <span class="end-date">{{ dateFormat "Jan 2006" .endDate }}</span>
+                    </span>
+                </div>
+                <div class="main">
+                    {{ with .summary }}
+                        <div class="summary">{{ . }}</div>
+                    {{ end }}
+                    {{ with .courses }}
+                        <ul class="courses">
+                            {{ range . }}
+                                <li>{{ . }}</li>
+                            {{ end }}
+                        </ul>
+                    {{ end }}
+                </div>
+            </div>
+        {{ end }}
+    </section>
+
+    <section>
+        <h2 class="header">Work</h2>
+        {{ range .Site.Data.resume.work }}
+            <div class="work">
+                <div class="sidebar">
+                    <span class="work-item company">{{ .company }}</span>
+                    <span class="work-item position">{{ .position }}</span>
+                    <span class="work-item date">
+                        <span class="start-date">{{ dateFormat "Jan 2006" .startDate }}</span>
+                        <span class="end-date">{{ dateFormat "Jan 2006" .endDate }}</span>
+                    </span>
+                </div>
+                <div class="main">
+                    {{ with .summary }}
+                        <div class="work-item summary">{{ . }}</div>
+                    {{ end }}
+                    {{ with .highlights }}
+                        <ol class="work-item highlights">
+                            {{ range . }}
+                                <li>{{ . }}</li>
+                            {{ end }}
+                        </ol>
+                    {{ end }}
+                </div>
+            </div>
+        {{ end }}
+    </section>
+
+    <section>
+        <h2 class="header">Volunteering</h2>
+        {{ range .Site.Data.resume.volunteer }}
+            <div class="work">
+                <div class="sidebar">
+                    <span class="work-item company">{{ .organization }}</span>
+                    <span class="work-item position">{{ .position }}</span>
+                    <span class="work-item date">
+                        <span class="start-date">{{ dateFormat "Jan 2006" .startDate }}</span>
+                        <span class="end-date">{{ dateFormat "Jan 2006" .endDate }}</span>
+                    </span>
+                </div>
+                <div class="main">
+                    {{ with .summary }}
+                        <div class="work-item summary">{{ . }}</div>
+                    {{ end }}
+                    {{ with .highlights }}
+                        <ol class="work-item highlights">
+                            {{ range . }}
+                                <li>{{ . }}</span>
+                            {{ end }}
+                        </ol>
+                    {{ end }}
+                </div>
+            </div>
+        {{ end }}
+    </section>
+
+    <section>
+        <h2 class="header">Awards</h2>
+        <div class="awards">
+        {{ range .Site.Data.resume.awards }}
+            <div class="award">
+                <span class="award-item title">{{ .title }}</span>
+                <span class="award-item awarder">{{ .awarder }}</span>
+                <span class="award-item date">{{ dateFormat "Jan 2006" .date }}</span>
+                <div class="award-item summary">{{ .summary }}</div>
+            </div>
+        {{ end }}
+        </div>
+    </section>
+
+    {{ .Content }}
+{{ end }}

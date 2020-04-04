@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+
+    {{ $sass := resources.Get "style/reset.scss" }}
+    {{ $style := $sass | resources.ToCSS }}
+    <link rel="stylesheet" type="text/css" href="{{ $style.RelPermalink }}" />
+
+    {{ block "head" . }}{{ end }}
+</head>
+<body>
+    <main>
+        {{ block "main" . }}{{ end }}
+    </main>
+</body>
+</html>
