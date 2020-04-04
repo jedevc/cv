@@ -27,8 +27,7 @@
       "institution": "University of Birmingham",
       "area": "Software Development",
       "studyType": "BSc",
-      "startDate": "2011-01-01",
-      "endDate": "2013-01-01",
+      "startDate": "2018-09-01",
       "summary": "Best modules:",
       "courses": [
         "[97%] Logic and Computation (1st year)",
@@ -41,7 +40,7 @@
       "area": "",
       "studyType": "A levels",
       "startDate": "2017-08-01",
-      "endDate": "2018-05-01",
+      "endDate": "2018-06-01",
       "courses": [
         "[A*] Computer Science",
         "[A*] Mathematics",
@@ -53,7 +52,7 @@
       "area": "",
       "studyType": "IGCSE",
       "startDate": "2016-08-01",
-      "endDate": "2017-05-01",
+      "endDate": "2017-06-01",
       "summary": "10 GCSEs, 9 A*s"
     }
   ],
@@ -91,7 +90,7 @@
       "position": "Front-end Engineer",
       "website": "https://progressiveaccess.com",
       "startDate": "2019-11-01",
-      "endDate": "2019-11-01",
+      "endDate": "",
       "summary": "",
       "highlights": [
         "Designed and created a new website from scratch to represent the face of the company.",
@@ -178,7 +177,6 @@
       "position": "Organizer",
       "website": "http://hackthemidlands.com/",
       "startDate": "2019-06-01",
-      "endDate": "2019-10-01",
       "summary": "",
       "highlights": [
         "Helped plan and organize a hackathon of over 250 attendees.",
@@ -191,7 +189,6 @@
       "position": "Leader",
       "website": "http://afnom.net/",
       "startDate": "2018-10-01",
-      "endDate": "2018-10-01",
       "summary": "",
       "highlights": [
         "Represented the university in CTFs, as 2nd highest ranked UK University team.",

@@ -4,6 +4,28 @@
     <link rel="stylesheet" type="text/css" href="{{ $style.RelPermalink }}" />
 {{ end }}
 
+{{ define "dateRange" }}
+    <span class="date">
+        {{- if (eq .startDate .endDate) -}}
+            {{- if .startDate -}}
+                <span class="only-date">{{ dateFormat "Jan 2006" .startDate }}</span>
+            {{- end -}}
+        {{- else -}}
+            {{- if .startDate -}}
+                <span class="start-date">{{ dateFormat "Jan 2006" .startDate }}</span>
+            {{- else -}}
+                <span class="start-date"></span>
+            {{- end -}}
+
+            {{- if .endDate -}}
+                <span class="end-date">{{ dateFormat "Jan 2006" .endDate }}</span>
+            {{- else -}}
+                <span class="end-date">Present</span>
+            {{- end -}}
+        {{- end -}}  
+    </span>
+{{ end }}
+
 {{ define "main" }}
     <section class="basics">
         {{ with .Site.Data.resume.basics }}
@@ -33,10 +55,7 @@
                 <div class="sidebar">
                     <span class="course">{{ .area }} {{ .studyType }}</span>
                     <span class="institution">{{ .institution }}</span>
-                    <span class="date">
-                        <span class="start-date">{{ dateFormat "Jan 2006" .startDate }}</span>
-                        <span class="end-date">{{ dateFormat "Jan 2006" .endDate }}</span>
-                    </span>
+                    {{ block "dateRange" . }}{{ end }}
                 </div>
                 <div class="main">
                     {{ with .summary }}
@@ -85,10 +104,7 @@
                 <div class="sidebar">
                     <span class="company">{{ .company }}</span>
                     <span class="position">{{ .position }}</span>
-                    <span class="date">
-                        <span class="start-date">{{ dateFormat "Jan 2006" .startDate }}</span>
-                        <span class="end-date">{{ dateFormat "Jan 2006" .endDate }}</span>
-                    </span>
+                    {{ block "dateRange" . }}{{ end }}
                 </div>
                 <div class="main">
                     {{ with .summary }}
@@ -131,10 +147,7 @@
                 <div class="sidebar">
                     <span class="company">{{ .organization }}</span>
                     <span class="position">{{ .position }}</span>
-                    <span class="date">
-                        <span class="start-date">{{ dateFormat "Jan 2006" .startDate }}</span>
-                        <span class="end-date">{{ dateFormat "Jan 2006" .endDate }}</span>
-                    </span>
+                    {{ block "dateRange" . }}{{ end }}
                 </div>
                 <div class="main">
                     {{ with .summary }}
