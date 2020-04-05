@@ -13,14 +13,7 @@
       "city": "Smethwick",
       "countryCode": "UK",
       "region": "West Midlands"
-    },
-    "profiles": [
-      {
-        "network": "Twitter",
-        "username": "john",
-        "url": "http://twitter.com/john"
-      }
-    ]
+    }
   },
   "education": [
     {
