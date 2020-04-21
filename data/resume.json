@@ -51,6 +51,15 @@
   ],
   "projects": [
     {
+      "name": "AppArea",
+      "website": "apparea.dev",
+      "summary": "Lightweight open-source port forwarding helper using SSH tunnels.",
+      "keywords": [
+        "Go",
+        "Linux"
+      ]
+    },
+    {
       "name": "bhamcal",
       "website": "github.com/jedevc/bhamcal",
       "summary": "Timetable extractor and converter for University of Birmingham web timetables.",
@@ -66,14 +75,6 @@
       "keywords": [
         "Python",
         "Linux"
-      ]
-    },
-    {
-      "name": "rngback",
-      "website": "github.com/jedevc/rngback",
-      "summary": "Command-line utility for randomly generating geometric wallpapers and backgrounds.",
-      "keywords": [
-        "Python"
       ]
     }
   ],
