@@ -52,7 +52,7 @@
   "projects": [
     {
       "name": "AppArea",
-      "website": "apparea.dev",
+      "website": "https://apparea.dev",
       "summary": "Lightweight open-source port forwarding helper using SSH tunnels.",
       "keywords": [
         "Go",
@@ -61,7 +61,7 @@
     },
     {
       "name": "bhamcal",
-      "website": "github.com/jedevc/bhamcal",
+      "website": "https://github.com/jedevc/bhamcal",
       "summary": "Timetable extractor and converter for University of Birmingham web timetables.",
       "keywords": [
         "Python",
@@ -70,7 +70,7 @@
     },
     {
       "name": "mafs",
-      "website": "github.com/jedevc/mafs",
+      "website": "https://github.com/jedevc/mafs",
       "summary": "Python wrapper for FUSE allowing easy creation of virtual filesystems.",
       "keywords": [
         "Python",
