@@ -3,3 +3,5 @@ languageCode = "en-gb"
 title = "jedevc | CV"
 
 relativeURLs = true
+
+disableKinds = ["taxonomy", "taxonomyTerm"]
