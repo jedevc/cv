@@ -69,7 +69,7 @@ a {
   color: $highlight;
 
   &:visited {
-    color: inherit;
+    color: $highlight;
   }
 
   &:hover {
