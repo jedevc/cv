@@ -2,7 +2,6 @@
   "basics": {
     "name": "Justin Chadwell",
     "label": "Software Engineer",
-    "picture": "",
     "email": "jedevc@gmail.com",
     "phone": "+44795611165",
     "website": "https://jedevc.com",
@@ -132,20 +131,20 @@
   ],
   "skills": [
     {
+      "name": "Scripting",
+      "level": "Advanced",
+      "keywords": [
+        "Python",
+        "Bash"
+      ]
+    },
+    {
       "name": "Web Development",
       "level": "Intermediate",
       "keywords": [
         "HTML",
         "CSS",
         "Javascript"
-      ]
-    },
-    {
-      "name": "Scripting",
-      "level": "Intermediate",
-      "keywords": [
-        "Python",
-        "Bash"
       ]
     },
     {
@@ -199,37 +198,36 @@
       "endDate": "2020-06-01",
       "summary": "",
       "highlights": [
-        "Represented the university in CTFs, as 2nd highest ranked UK University team.",
-        "Developed CTFs for UoB’s School of Computer Science and INRIA’s SILM summer school.",
-        "Designed and created challenges spanning multiple areas within cybersecurity.",
-        "Managed infrastructure hosted on Google Cloud Platform."
+        "Built up the CompSci community at UoB by encouraging participation in society events, and enhancing relations with societies at other Universities.",
+        "Organized and ran a number of events, including hackathons, talks and workshops.",
+        "Became a Google Student Developer Club Lead to include more workshops and talks."
       ]
     }
   ],
   "awards": [
     {
-      "title": "Computer Science School Undergraduate Prize",
+      "title": "Computer Science Undergraduate Prize",
       "date": "2019-12-01",
       "awarder": "University of Birmingham",
-      "summary": "Awarded for achieving the highest combined weighted average in first year Computer Science."
+      "summary": "Achieved the highest combined weighted average in first year Computer Science."
     },
     {
       "title": "EPS Event of the Year (nomination)",
       "date": "2019-06-01",
       "awarder": "University of Birmingham",
-      "summary": "Nominated for WhatTheCTF 2019, a custom-built cybersecurity competition designed by students for students."
+      "summary": "WhatTheCTF 2019, a custom-built cybersecurity competition designed by students for students."
     },
     {
       "title": "Academic Excellence Award",
       "date": "2018-06-01",
       "awarder": "KISC",
-      "summary": "Awarded for excellence and outstanding performance in studied subjects."
+      "summary": "Excellence and outstanding performance in studied subjects."
     },
     {
       "title": "Leadership Award",
       "date": "2018-06-01",
       "awarder": "KISC",
-      "summary": "Awarded for contributions to the local community, including volunteer trips to local villages and co-leading the student council"
+      "summary": "Contributions to the local community, including volunteer trips to local villages and co-leading the student council."
     }
   ],
   "interests": [
