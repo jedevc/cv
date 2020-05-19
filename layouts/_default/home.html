@@ -31,8 +31,11 @@
         {{ with .Site.Data.resume.basics }}
             <h1 class="name">{{ .name }}</h1>
             <div class="contact">
-                <span class="email">{{ .email }}</span>
-                <span class="phone">{{ .phone }}</span>
+                <a href="{{ .website }}">{{ .website }}</a>
+            </span>
+            <div class="contact">
+                <span>{{ .email }}</span>,
+                <span>{{ .phone }}</span>
             </div>
             <div class="location">
                 {{ with .location.address }}
