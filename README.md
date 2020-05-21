@@ -2,8 +2,10 @@
 
 Woo! A CV!
 
-The single page on the site is generated from `data/resume.json`, whose
-format is loosely inspired by [JSON Resume](https://jsonresume.org/).
+The single page on the site is generated from `data/resume.yaml`, whose
+format was originally loosely inspired by [JSON
+Resume](https://jsonresume.org/), but has since taken on a bit of a life of
+it's own.
 
 ## Development
 
@@ -24,5 +26,5 @@ Build the site:
 
 This software is released under the UNLICENSE.
 
-However, the contents of `data/resume.json` is personal information, and is
+However, the contents of `data/resume.yaml` is personal information, and is
 therefore withheld from the UNLICENSE.
