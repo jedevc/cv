@@ -59,7 +59,7 @@ projects:
     timetables.
 
     The default university timetable interface was complex to navigate, so I
-    constructed a command line tool to extract it into a variety of formats.'
+    constructed a command line tool to extract it into a variety of formats.
 - name: 'mafs'
   website: 'https://github.com/jedevc/mafs'
   keywords:
@@ -69,7 +69,7 @@ projects:
     Python wrapper for FUSE allowing creation of virtual filesystems.
 
     A project I worked on to allow creating a variety of bizarre filesystems
-    easily with a Pythonic API.'
+    easily with a Pythonic API.
 
 work:
 - company: 'Progressive Accessibility Solutions'
