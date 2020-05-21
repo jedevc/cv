@@ -8,7 +8,6 @@
     "summary": "Computer Science Student working on awesome projects 🎉",
     "location": {
       "address": "",
-      "postalCode": "",
       "city": "Smethwick",
       "countryCode": "UK",
       "region": "West Midlands"
@@ -52,7 +51,7 @@
     {
       "name": "AppArea",
       "website": "https://apparea.dev",
-      "summary": "Lightweight open-source port forwarding helper using SSH tunnels.",
+      "summary": "An entirely open-source port forwarding helper to localhost using SSH tunnels.\n\nI built it out of a frustration that none of the existing tools in the area were open source and had minimal client-side dependencies.",
       "keywords": [
         "Go",
         "Linux"
@@ -61,7 +60,7 @@
     {
       "name": "bhamcal",
       "website": "https://github.com/jedevc/bhamcal",
-      "summary": "Timetable extractor and converter for University of Birmingham web timetables.",
+      "summary": "Timetable extractor and converter for University of Birmingham web timetables.\n\nThe default university timetable interface was complex to navigate, so I constructed a command line tool to extract it into a variety of formats.",
       "keywords": [
         "Python",
         "Google Cloud"
@@ -70,7 +69,7 @@
     {
       "name": "mafs",
       "website": "https://github.com/jedevc/mafs",
-      "summary": "Python wrapper for FUSE allowing easy creation of virtual filesystems.",
+      "summary": "Python wrapper for FUSE allowing creation of virtual filesystems.\n\nA project I worked on to allow creating a variety of bizarre filesystems easily with a Pythonic API.",
       "keywords": [
         "Python",
         "Linux"
@@ -80,7 +79,7 @@
   "work": [
     {
       "company": "Progressive Accessibility Solutions",
-      "position": "Front-end Engineer",
+      "position": "Primary Front-End Developer",
       "website": "https://progressiveaccess.com",
       "startDate": "2019-11-01",
       "endDate": "",
@@ -215,7 +214,7 @@
       "title": "EPS Event of the Year (nomination)",
       "date": "2019-06-01",
       "awarder": "University of Birmingham",
-      "summary": "WhatTheCTF 2019, a custom-built cybersecurity competition designed by students for students."
+      "summary": "[WhatTheCTF 2019](https://afnom.net/wtctf19/), a custom-built cybersecurity competition designed by students for students."
     },
     {
       "title": "Academic Excellence Award",

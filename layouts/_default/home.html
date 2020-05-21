@@ -53,7 +53,7 @@
             </div>
 
             {{ with .summary }}
-                <p class="summary">{{ . }}</p>
+                <div class="summary">{{ . | markdownify }}</div>
             {{ end }}
         {{ end }}
     </section>
@@ -100,7 +100,7 @@
                 </div>
                 <div class="main">
                     {{ with .summary }}
-                        <div class="summary">{{ . }}</div>
+                        <div class="summary">{{ . | markdownify }}</div>
                     {{ end }}
                 </div>
             </div>
@@ -118,12 +118,12 @@
                 </div>
                 <div class="main">
                     {{ with .summary }}
-                        <div class="summary">{{ . }}</div>
+                        <div class="summary">{{ . | markdownify }}</div>
                     {{ end }}
                     {{ with .highlights }}
                         <ol class="highlights">
                             {{ range . }}
-                                <li>{{ . }}</li>
+                                <li>{{ . | markdownify }}</li>
                             {{ end }}
                         </ol>
                     {{ end }}
@@ -161,12 +161,12 @@
                 </div>
                 <div class="main">
                     {{ with .summary }}
-                        <div class="summary">{{ . }}</div>
+                        <div class="summary">{{ . | markdownify }}</div>
                     {{ end }}
                     {{ with .highlights }}
                         <ol class="highlights">
                             {{ range . }}
-                                <li>{{ . }}</span>
+                                <li>{{ . | markdownify }}</span>
                             {{ end }}
                         </ol>
                     {{ end }}
@@ -183,7 +183,7 @@
                 <span class="title">{{ .title }}</span>
                 <span class="awarder">{{ .awarder }}</span>
                 <span class="date">{{ dateFormat "Jan 2006" .date }}</span>
-                <div class="summary">{{ .summary }}</div>
+                <div class="summary">{{ .summary | markdownify }}</div>
             </div>
         {{ end }}
         </div>
@@ -203,7 +203,7 @@
                 </div>
                 <div class="main">
                     {{ with .summary }}
-                        <div class="summary">{{ . }}</div>
+                        <div class="summary">{{ . | markdownify }}</div>
                     {{ end }}
                 </div>
             </div>
