@@ -146,7 +146,7 @@ a {
 .basics {
   text-align: center;
 
-  .contact {
+  .website, .contact, .location {
     color: #666;
     font-style: italic;
 
@@ -155,19 +155,6 @@ a {
     }
     .contact-item:last-child::after {
       content: "";
-    }
-  }
-
-  .location {
-    color: #666;
-
-    & > * {
-      &::after {
-        content: ", ";
-      }
-      &:last-child::after {
-        content: "";
-      }
     }
   }
 

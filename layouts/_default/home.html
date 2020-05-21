@@ -30,28 +30,25 @@
     <section class="basics">
         {{ with .Site.Data.resume.basics }}
             <h1 class="name">{{ .name }}</h1>
-            <div class="contact">
+            <div class="website">
                 <a href="{{ .website }}">{{ .website }}</a>
-            </span>
+            </div>
             <div class="contact">
                 <span>{{ .email }}</span>,
                 <span>{{ .phone }}</span>
             </div>
             <div class="location">
                 {{ with .location.address }}
-                    <span class="address">{{ . }}</span>
+                    <span>{{ . }}</span>
                 {{ end }}
                 {{ with .location.city }}
-                    <span class="city">{{ . }}</span>
+                    <span>{{ . }}</span>
                 {{ end }}
                 {{ with .location.region }}
-                    <span class="region">{{ . }}</span>
-                {{ end }}
-                {{ with .location.postalCod2 }}
-                    <span class="post-code">{{ . }}</span>
+                    <span>{{ . }}</span>
                 {{ end }}
                 {{ with .location.countryCode }}
-                    <span class="country-code">{{ . }}</span>
+                    <span>{{ . }}</span>
                 {{ end }}
             </div>
 
