@@ -1,11 +1,10 @@
 # CV
 
-Woo! A CV!
+Woo! A single web page, printable CV!
 
 The single page on the site is generated from `data/resume.yaml`, whose
-format was originally loosely inspired by [JSON
-Resume](https://jsonresume.org/), but has since taken on a bit of a life of
-it's own.
+format was originally loosely inspired by [JSON Resume](https://jsonresume.org/),
+but has since taken on a bit of a life of it's own.
 
 ## Development
 
