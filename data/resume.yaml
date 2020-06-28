@@ -1,223 +1,223 @@
 basics:
-  email: 'jedevc@gmail.com'
-  label: 'Software Engineer'
+  email: "cv@jedevc.com"
+  label: "Software Engineer"
   location:
-    address: ''
-    city: 'Smethwick'
-    countryCode: 'UK'
-    region: 'West Midlands'
-  name: 'Justin Chadwell'
-  phone: '+44795611165'
+    address: ""
+    city: "Smethwick"
+    countryCode: "UK"
+    region: "West Midlands"
+  name: "Justin Chadwell"
+  phone: "+44795611165"
   summary: "Computer Science Student working on awesome projects 🎉"
-  website: 'https://jedevc.com'
+  website: "https://jedevc.com"
 
 education:
-- area: 'Computer Science'
-  studyType: 'BSc'
-  institution: 'University of Birmingham'
-  startDate: '2018-09-01'
-  summary: 'Best modules:'
-  courses:
-  - '[97%] Logic and Computation (1st year)'
-  - '[99%] Programming in Java (1st year)'
-  - '[95%] Mathematical Foundations (1st year)'
-- area: ''
-  studyType: 'A levels'
-  institution: 'KISC'
-  startDate: '2017-08-01'
-  endDate: '2018-06-01'
-  courses:
-  - '[A*] Computer Science'
-  - '[A*] Mathematics'
-  - '[A] English Language'
-- area: ''
-  studyType: 'IGCSEs'
-  institution: 'KISC'
-  startDate: '2016-08-01'
-  endDate: '2017-06-01'
-  summary: '10 GCSEs, 9 A*s'
+  - area: "Computer Science"
+    studyType: "BSc"
+    institution: "University of Birmingham"
+    startDate: "2018-09-01"
+    summary: "Best modules:"
+    courses:
+      - "[97%] Logic and Computation (1st year)"
+      - "[99%] Programming in Java (1st year)"
+      - "[95%] Mathematical Foundations (1st year)"
+  - area: ""
+    studyType: "A levels"
+    institution: "KISC"
+    startDate: "2017-08-01"
+    endDate: "2018-06-01"
+    courses:
+      - "[A*] Computer Science"
+      - "[A*] Mathematics"
+      - "[A] English Language"
+  - area: ""
+    studyType: "IGCSEs"
+    institution: "KISC"
+    startDate: "2016-08-01"
+    endDate: "2017-06-01"
+    summary: "10 GCSEs, 9 A*s"
 
 projects:
-- name: 'AppArea'
-  website: 'https://apparea.dev'
-  keywords:
-  - 'Go'
-  - 'Linux'
-  summary: |
-    An entirely open-source port forwarding helper to localhost using SSH
-    tunnels.
+  - name: "AppArea"
+    website: "https://apparea.dev"
+    keywords:
+      - "Go"
+      - "Linux"
+    summary: |
+      An entirely open-source port forwarding helper to localhost using SSH
+      tunnels.
 
-    I built it out of a frustration that none of the existing tools in the area were
-    open source and had minimal client-side dependencies.
-- name: 'bhamcal'
-  website: 'https://github.com/jedevc/bhamcal'
-  keywords:
-  - 'Python'
-  - 'Google Cloud'
-  summary: |
-    Timetable extractor and converter for University of Birmingham web
-    timetables.
+      I built it out of a frustration that none of the existing tools in the area were
+      open source and had minimal client-side dependencies.
+  - name: "bhamcal"
+    website: "https://github.com/jedevc/bhamcal"
+    keywords:
+      - "Python"
+      - "Google Cloud"
+    summary: |
+      Timetable extractor and converter for University of Birmingham web
+      timetables.
 
-    The default university timetable interface was complex to navigate, so I
-    constructed a command line tool to extract it into a variety of formats.
-- name: 'mafs'
-  website: 'https://github.com/jedevc/mafs'
-  keywords:
-  - 'Python'
-  - 'Linux'
-  summary: |
-    Python wrapper for FUSE allowing creation of virtual filesystems.
+      The default university timetable interface was complex to navigate, so I
+      constructed a command line tool to extract it into a variety of formats.
+  - name: "mafs"
+    website: "https://github.com/jedevc/mafs"
+    keywords:
+      - "Python"
+      - "Linux"
+    summary: |
+      Python wrapper for FUSE allowing creation of virtual filesystems.
 
-    A project I worked on to allow creating a variety of bizarre filesystems
-    easily with a Pythonic API.
+      A project I worked on to allow creating a variety of bizarre filesystems
+      easily with a Pythonic API.
 
 work:
-- company: 'Progressive Accessibility Solutions'
-  position: 'Primary Front-End Developer'
-  website: 'https://progressiveaccess.com'
-  startDate: '2019-11-01'
-  endDate: ''
-  summary: ''
-  highlights:
-  - 'Designed and created a new website from scratch to represent the face of
-    the company.'
-  - 'Designed for adaptive screen sizes, including mobile, and ensured an
-    accessibility friendly layout.'
-  - 'Setup Headless CMS and engineered CI/CD pipelines to facilitate
-    automation.'
-- company: 'ARM'
-  position: 'Open Source Software Intern'
-  website: 'https://www.arm.com/'
-  startDate: '2019-06-01'
-  endDate: '2019-09-01'
-  summary: ''
-  highlights:
-  - 'Wrote C and A64/A32 to add support for next-gen ARM security features in
-    firmware.'
-  - 'Improved build processes and tests for Trusted Firmware A in the OSS
-    group.'
-  - 'Presented to engineers in the Open Source Software Group about using the
-    Undefined Behavior Sanitizer in firmware, an area I researched while
-    interning.'
-- company: 'Context Information Security'
-  position: 'Brand Ambassador'
-  website: 'https://www.contextis.com/'
-  startDate: '2019-01-01'
-  endDate: '2019-06-01'
-  summary: ''
-  highlights:
-  - 'Promoted Context IS to students at the University of Birmingham.'
-  - 'Attended conferences to represent the company, interacted with potential
-    hires and shared job opportunities with graduates.'
-- company: 'Cloud Factory'
-  position: 'Software Engineering Intern'
-  website: 'https://www.cloudfactory.com/'
-  startDate: '2016-05-01'
-  endDate: '2016-05-01'
-  summary: ''
-  highlights:
-  - 'Worked with the Service Level Agreement team to deliver consistent,
-    quality output.'
-  - 'Constructed unit tests, documented internal APIs and generated
-    monitoring graphs.'
+  - company: "Progressive Accessibility Solutions"
+    position: "Primary Front-End Developer"
+    website: "https://progressiveaccess.com"
+    startDate: "2019-11-01"
+    endDate: ""
+    summary: ""
+    highlights:
+      - "Designed and created a new website from scratch to represent the face of
+        the company."
+      - "Designed for adaptive screen sizes, including mobile, and ensured an
+        accessibility friendly layout."
+      - "Setup Headless CMS and engineered CI/CD pipelines to facilitate
+        automation."
+  - company: "ARM"
+    position: "Open Source Software Intern"
+    website: "https://www.arm.com/"
+    startDate: "2019-06-01"
+    endDate: "2019-09-01"
+    summary: ""
+    highlights:
+      - "Wrote C and A64/A32 to add support for next-gen ARM security features in
+        firmware."
+      - "Improved build processes and tests for Trusted Firmware A in the OSS
+        group."
+      - "Presented to engineers in the Open Source Software Group about using the
+        Undefined Behavior Sanitizer in firmware, an area I researched while
+        interning."
+  - company: "Context Information Security"
+    position: "Brand Ambassador"
+    website: "https://www.contextis.com/"
+    startDate: "2019-01-01"
+    endDate: "2019-06-01"
+    summary: ""
+    highlights:
+      - "Promoted Context IS to students at the University of Birmingham."
+      - "Attended conferences to represent the company, interacted with potential
+        hires and shared job opportunities with graduates."
+  - company: "Cloud Factory"
+    position: "Software Engineering Intern"
+    website: "https://www.cloudfactory.com/"
+    startDate: "2016-05-01"
+    endDate: "2016-05-01"
+    summary: ""
+    highlights:
+      - "Worked with the Service Level Agreement team to deliver consistent,
+        quality output."
+      - "Constructed unit tests, documented internal APIs and generated
+        monitoring graphs."
 
 skills:
-- name: 'Scripting'
-  level: 'Advanced'
-  keywords:
-  - 'Python'
-  - 'Bash'
-- name: 'Web Development'
-  level: 'Intermediate'
-  keywords:
-  - 'HTML'
-  - 'CSS'
-  - 'Javascript'
-- name: 'Security'
-  level: 'Intermediate'
-  keywords:
-  - 'Exploitation'
-  - 'Reverse Engineering'
-  - 'Linux'
-- name: 'Leadership'
-  keywords:
-  - 'Event organization'
-  - 'Tech lead'
+  - name: "Scripting"
+    level: "Advanced"
+    keywords:
+      - "Python"
+      - "Bash"
+  - name: "Web Development"
+    level: "Intermediate"
+    keywords:
+      - "HTML"
+      - "CSS"
+      - "Javascript"
+  - name: "Security"
+    level: "Intermediate"
+    keywords:
+      - "Exploitation"
+      - "Reverse Engineering"
+      - "Linux"
+  - name: "Leadership"
+    keywords:
+      - "Event organization"
+      - "Tech lead"
 
 volunteer:
-- organization: 'Hack The Midlands'
-  position: 'Organizer'
-  website: 'http://hackthemidlands.com/'
-  startDate: '2019-06-01'
-  summary: ''
-  highlights:
-  - 'Helped plan and organize a hackathon of over 250 attendees.'
-  - 'Built and deployed a number of web services to enhance attendee
-    experience.'
-  - 'Designed and ran a CTF, accessible to attendees of all ages and skill
-    levels.'
-- organization: 'AFNOM hacking club'
-  position: 'Leader'
-  website: 'http://afnom.net/'
-  startDate: '2018-10-01'
-  summary: ''
-  highlights:
-  - 'Represented the university in CTFs, as 2nd highest ranked UK University
-    team.'
-  - "Developed CTFs for UoB's School of Computer Science and INRIA's 2019 SILM
-    summer school."
-  - 'Designed and created challenges spanning multiple areas within
-    cybersecurity.'
-  - 'Managed infrastructure hosted on Google Cloud Platform.'
-- organization: 'Computer Science Society'
-  position: 'Vice President'
-  website: 'http://cssbham.com/'
-  startDate: '2019-03-01'
-  endDate: '2020-06-01'
-  summary: ''
-  highlights:
-  - 'Built up the CompSci community at UoB by encouraging participation in
-    society events, and enhancing relations with societies at other
-    Universities.'
-  - 'Organized and ran a number of events, including hackathons, talks and
-    workshops.'
-  - 'Became a Google Student Developer Club Lead to include more workshops
-    and talks.'
+  - organization: "Hack The Midlands"
+    position: "Organizer"
+    website: "http://hackthemidlands.com/"
+    startDate: "2019-06-01"
+    summary: ""
+    highlights:
+      - "Helped plan and organize a hackathon of over 250 attendees."
+      - "Built and deployed a number of web services to enhance attendee
+        experience."
+      - "Designed and ran a CTF, accessible to attendees of all ages and skill
+        levels."
+  - organization: "AFNOM hacking club"
+    position: "Leader"
+    website: "http://afnom.net/"
+    startDate: "2018-10-01"
+    summary: ""
+    highlights:
+      - "Represented the university in CTFs, as 2nd highest ranked UK University
+        team."
+      - "Developed CTFs for UoB's School of Computer Science and INRIA's 2019 SILM
+        summer school."
+      - "Designed and created challenges spanning multiple areas within
+        cybersecurity."
+      - "Managed infrastructure hosted on Google Cloud Platform."
+  - organization: "Computer Science Society"
+    position: "Vice President"
+    website: "http://cssbham.com/"
+    startDate: "2019-03-01"
+    endDate: "2020-06-01"
+    summary: ""
+    highlights:
+      - "Built up the CompSci community at UoB by encouraging participation in
+        society events, and enhancing relations with societies at other
+        Universities."
+      - "Organized and ran a number of events, including hackathons, talks and
+        workshops."
+      - "Became a Google Student Developer Club Lead to include more workshops
+        and talks."
 
 awards:
-- awarder: 'University of Birmingham'
-  title: 'Computer Science Undergraduate Prize'
-  date: '2019-12-01'
-  summary: |
-    Achieved the highest combined weighted average in first year Computer
-    Science.
-- awarder: 'University of Birmingham'
-  title: 'EPS Event of the Year (shortlisted)'
-  date: '2019-06-01'
-  summary: |
-    [WhatTheCTF 2019](https://afnom.net/wtctf19/), a custom-built
-    cybersecurity competition designed by students for students.
-- awarder: 'KISC'
-  title: 'Academic Excellence Award'
-  date: '2018-06-01'
-  summary: |
-    Excellence and outstanding performance in studied subjects.
-- awarder: 'KISC'
-  title: 'Leadership Award'
-  date: '2018-06-01'
-  summary: |
-    Contributions to the local community, including volunteer trips to local
-    villages and co-leading the student council.
+  - awarder: "University of Birmingham"
+    title: "Computer Science Undergraduate Prize"
+    date: "2019-12-01"
+    summary: |
+      Achieved the highest combined weighted average in first year Computer
+      Science.
+  - awarder: "University of Birmingham"
+    title: "EPS Event of the Year (shortlisted)"
+    date: "2019-06-01"
+    summary: |
+      [WhatTheCTF 2019](https://afnom.net/wtctf19/), a custom-built
+      cybersecurity competition designed by students for students.
+  - awarder: "KISC"
+    title: "Academic Excellence Award"
+    date: "2018-06-01"
+    summary: |
+      Excellence and outstanding performance in studied subjects.
+  - awarder: "KISC"
+    title: "Leadership Award"
+    date: "2018-06-01"
+    summary: |
+      Contributions to the local community, including volunteer trips to local
+      villages and co-leading the student council.
 
 interests:
-- name: 'Tech'
-  summary: |
-    A bit traditional, but I enjoy tinkering with a number of techy projects
-    at home while I have a few spare moments.
-- name: 'Travel'
-  summary: |
-    Having grown up overseas, I love international travel whenever I can!
-- name: 'Food'
-  summary: |
-    I'm always up for trying new food, and regularly try and find new places
-    to eat out. I also really enjoy cooking at home for fun!
+  - name: "Tech"
+    summary: |
+      A bit traditional, but I enjoy tinkering with a number of techy projects
+      at home while I have a few spare moments.
+  - name: "Travel"
+    summary: |
+      Having grown up overseas, I love international travel whenever I can!
+  - name: "Food"
+    summary: |
+      I'm always up for trying new food, and regularly try and find new places
+      to eat out. I also really enjoy cooking at home for fun!
