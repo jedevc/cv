@@ -129,11 +129,18 @@ skills:
       - "Python"
       - "Bash"
   - name: "Web Development"
-    level: "Intermediate"
+    level: "Advanced"
     keywords:
       - "HTML"
       - "CSS"
       - "Javascript"
+      - "React"
+  - name: "Systems"
+    level: "Intermediate"
+    keywords:
+      - "Compilers"
+      - "Linux"
+      - "Media"
   - name: "Security"
     level: "Intermediate"
     keywords:
@@ -158,15 +165,15 @@ volunteer:
       - "Designed and ran a CTF, accessible to attendees of all ages and skill
         levels."
   - organization: "AFNOM hacking club"
-    position: "Leader"
+    position: "Co-lead"
     website: "http://afnom.net/"
     startDate: "2018-10-01"
     summary: ""
     highlights:
-      - "Represented the university in CTFs, as 2nd highest ranked UK University
-        team."
-      - "Developed CTFs for UoB's School of Computer Science and INRIA's 2019 SILM
-        summer school."
+      - "Represented the university in CTFs, as 2nd highest ranked UK
+        University team."
+      - "Developed CTFs for UoB's School of Computer Science and INRIA's 2019
+        SILM summer school."
       - "Designed and created challenges spanning multiple areas within
         cybersecurity."
       - "Managed infrastructure hosted on Google Cloud Platform."
@@ -187,7 +194,7 @@ volunteer:
 
 awards:
   - awarder: "University of Birmingham"
-    title: "Computer Science Undergraduate Prize"
+    title: "CS Undergraduate Prize"
     date: "2019-12-01"
     summary: |
       Achieved the highest combined weighted average in first year Computer
@@ -207,8 +214,8 @@ awards:
     title: "Leadership Award"
     date: "2018-06-01"
     summary: |
-      Contributions to the local community, including volunteer trips to local
-      villages and co-leading the student council.
+      Contributions to the community, including volunteer trips to
+      underprivileged villages.
 
 interests:
   - name: "Tech"
