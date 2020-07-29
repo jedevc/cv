@@ -72,6 +72,19 @@ projects:
       easily with a Pythonic API.
 
 work:
+  - company: "Pexip"
+    position: "Software Intern"
+    website: "https://www.pexip.com/"
+    startDate: "2019-05-29"
+    endDate: ""
+    summary: ""
+    highlights:
+      - "Fixed various security-sensitive memory corruption and logic bugs in
+        gstreamer elements."
+      - "Improved testing and CI process by adding support for LLVM builds
+        with the clang compiler."
+      - "Added instrumentation to the build to allow for static analysis and
+        fuzzing."
   - company: "Progressive Accessibility Solutions"
     position: "Primary Front-End Developer"
     website: "https://progressiveaccess.com"
@@ -79,8 +92,7 @@ work:
     endDate: ""
     summary: ""
     highlights:
-      - "Designed and created a new website from scratch to represent the face of
-        the company."
+      - "Designed and created a new client-facing website from scratch."
       - "Designed for adaptive screen sizes, including mobile, and ensured an
         accessibility friendly layout."
       - "Setup Headless CMS and engineered CI/CD pipelines to facilitate
@@ -109,17 +121,6 @@ work:
       - "Promoted Context IS to students at the University of Birmingham."
       - "Attended conferences to represent the company, interacted with potential
         hires and shared job opportunities with graduates."
-  - company: "Cloud Factory"
-    position: "Software Engineering Intern"
-    website: "https://www.cloudfactory.com/"
-    startDate: "2016-05-01"
-    endDate: "2016-05-01"
-    summary: ""
-    highlights:
-      - "Worked with the Service Level Agreement team to deliver consistent,
-        quality output."
-      - "Constructed unit tests, documented internal APIs and generated
-        monitoring graphs."
 
 skills:
   - name: "Scripting"

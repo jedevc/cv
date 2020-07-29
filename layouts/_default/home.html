@@ -88,15 +88,17 @@
         {{ range .Site.Data.resume.projects }}
             <div class="projects-item">
                 <div class="sidebar">
-                    <span class="name">{{ .name }}</span>
+                    <div class="split">
+                        <span class="name">{{ .name }}</span>
+                        <span class="keywords">
+                            {{ range .keywords }}
+                                <span class="keyword">{{ . }}</span>
+                            {{ end }}
+                        </span>
+                    </div>
                     {{ with .website }}
                         <a href="{{ . }}" class="website">{{ . }}</a>
                     {{ end }}
-                    <div class="keywords">
-                        {{ range .keywords }}
-                            <span class="keyword">{{ . }}</span>
-                        {{ end }}
-                    </div>
                 </div>
                 <div class="main">
                     {{ with .summary }}

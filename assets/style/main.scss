@@ -382,5 +382,10 @@ section {
     .name {
       font-weight: 600;
     }
+
+    .keywords {
+      float: right;
+      transform: translateY(-0.3em);
+    }
   }
 }
