@@ -141,7 +141,7 @@ ul, ol {
       font-style: normal;
     }
 
-    .keywords {
+    .sidebar-keywords {
       float: right;
       transform: translateY(-0.3em);
     }
@@ -260,76 +260,66 @@ section {
   }
 }
 
-.skills {
-  .skills-item {
-    .description {
-      display: inline;
-
-      .name::after {
-        padding-right: 0.3em;
-      }
-
-      .level::before {
-        content: "\2013";
-        padding-right: 0.3em;
-      }
-
-      margin-right: 1em;
-    }
-
-    .keyword {
-      display: inline;
-      margin-right: 0.1em;
-    }
+.collapsible-minimal {
+  .sidebar {
+    display: inline;
+    margin-right: 1em;
+  }
+  .main {
+    display: inline;
   }
 }
 
 @media only screen and (max-width: 800px) {
-  .skills {
-    .skills-item {
-      .description {
-        display: block;
-      }
+  .collapsible-minimal {
+    .sidebar {
+      display: block;
+    }
+    .main {
+      display: block;
     }
   }
 }
 
-.awards {
+.grid {
   font-size: 0.9em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 
-  .awards-item {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .award {
+  .grid-item {
     margin: 0.6em;
 
     .top {
       display: flex;
       flex-direction: column;
 
-      .title {
+      .top-item:first-child {
         font-weight: 600;
       }
-
-      .awarder {
+      
+      .top-item:nth-child(2) {
         font-style: italic;
       }
 
-      .summary {
-        padding-top: 0.6em;
+      .top-item:last-child {
+        font-weight: normal;
+        font-style: normal;
       }
+    }
+
+    .main {
+      padding-top: 0.6em;
     }
 
     border: 1px solid #ddd;
     padding: 1em;
   }
+}
 
-  @media only screen and (max-width: 800px) {
-    .awards-item {
-      grid-template-columns: 1fr;
-    }
+@media only screen and (max-width: 800px) {
+  .grid {
+    grid-template-columns: 1fr;
+
     .award {
       .top {
         display: inline;

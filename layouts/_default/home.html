@@ -70,7 +70,7 @@
                 </div>
                 <div class="main">
                     {{ with .summary }}
-                        <div class="summary">{{ . }}</div>
+                        <div>{{ . }}</div>
                     {{ end }}
                     {{ with .courses }}
                         <ul>
@@ -90,7 +90,7 @@
             <div class="collapsible">
                 <div class="sidebar">
                     <span class="sidebar-item">{{ .name }}</span>
-                    <span class="keywords">
+                    <span class="sidebar-keywords">
                         {{ range .keywords }}
                             <span class="keyword">{{ . }}</span>
                         {{ end }}
@@ -101,7 +101,7 @@
                 </div>
                 <div class="main">
                     {{ with .summary }}
-                        <div class="summary">{{ . | markdownify }}</div>
+                        <div>{{ . | markdownify }}</div>
                     {{ end }}
                 </div>
             </div>
@@ -119,7 +119,7 @@
                 </div>
                 <div class="main">
                     {{ with .summary }}
-                        <div class="summary">{{ . | markdownify }}</div>
+                        <div>{{ . | markdownify }}</div>
                     {{ end }}
                     {{ with .highlights }}
                         <ol>
@@ -133,19 +133,22 @@
         {{ end }}
     </section>
 
-    <section class="skills">
+    <section>
         <h2 class="header">Skills</h2>
         {{ range .Site.Data.resume.skills }}
-            <div class="skills-item">
-                <div class="description">
+            <div class="collapsible-minimal">
+                <div class="sidebar">
                     <span class="name">{{ .name }}</span>
                     {{ with .level }}
+                        &mdash;
                         <span class="level">{{ . }}</span>
                     {{ end }}
                 </div>
-                {{ range .keywords }}
-                    <div class="keyword">{{ . }}</div>
-                {{ end }}
+                <div class="main">
+                    {{ range .keywords }}
+                        <span class="keyword">{{ . }}</span>
+                    {{ end }}
+                </div>
             </div>
         {{ end }}
     </section>
@@ -162,7 +165,7 @@
                 </div>
                 <div class="main">
                     {{ with .summary }}
-                        <div class="summary">{{ . | markdownify }}</div>
+                        <div>{{ . | markdownify }}</div>
                     {{ end }}
                     {{ with .highlights }}
                         <ol>
@@ -176,17 +179,17 @@
         {{ end }}
     </section>
 
-    <section class="awards">
+    <section>
         <h2 class="header">Awards</h2>
-        <div class="awards-item">
+        <div class="grid">
         {{ range .Site.Data.resume.awards }}
-            <div class="award">
+            <div class="grid-item">
                 <div class="top">
-                    <span class="title">{{ .title }}</span>
-                    <span class="awarder">{{ .awarder }}</span>
-                    <span class="date">{{ dateFormat "Jan 2006" .date }}</span>
+                    <span class="top-item">{{ .title }}</span>
+                    <span class="top-item">{{ .awarder }}</span>
+                    <span class="top-item">{{ dateFormat "Jan 2006" .date }}</span>
                 </div>
-                <div class="summary">{{ .summary | markdownify }}</div>
+                <div class="main">{{ .summary | markdownify }}</div>
             </div>
         {{ end }}
         </div>
@@ -206,7 +209,7 @@
                 </div>
                 <div class="main">
                     {{ with .summary }}
-                        <div class="summary">{{ . | markdownify }}</div>
+                        <div>{{ . | markdownify }}</div>
                     {{ end }}
                 </div>
             </div>
