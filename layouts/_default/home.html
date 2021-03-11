@@ -29,42 +29,43 @@
 {{ define "main" }}
     <section class="basics">
         {{ with .Site.Data.resume.basics }}
-            <h1 class="name">{{ .name }}</h1>
-            <div class="website">
-                <a href="{{ .website }}">{{ .website }}</a>
+            <h1>{{ .name }}</h1>
+            <div class="information">
+                <div>
+                    <a href="{{ .website }}">{{ .website }}</a>
+                </div>
+                <div>
+                    <span>{{ .email }}</span>,
+                    <span>{{ .phone }}</span>
+                </div>
+                <div>
+                    {{ with .location.address }}
+                        <span>{{ . }}</span>,
+                    {{ end }}
+                    {{ with .location.city }}
+                        <span>{{ . }}</span>,
+                    {{ end }}
+                    {{ with .location.region }}
+                        <span>{{ . }}</span>,
+                    {{ end }}
+                    {{ with .location.countryCode }}
+                        <span>{{ . }}</span>
+                    {{ end }}
+                </div>
             </div>
-            <div class="contact">
-                <span>{{ .email }}</span>,
-                <span>{{ .phone }}</span>
-            </div>
-            <div class="location">
-                {{ with .location.address }}
-                    <span>{{ . }}</span>,
-                {{ end }}
-                {{ with .location.city }}
-                    <span>{{ . }}</span>,
-                {{ end }}
-                {{ with .location.region }}
-                    <span>{{ . }}</span>,
-                {{ end }}
-                {{ with .location.countryCode }}
-                    <span>{{ . }}</span>
-                {{ end }}
-            </div>
-
             {{ with .summary }}
                 <div class="summary">{{ . | markdownify }}</div>
             {{ end }}
         {{ end }}
     </section>
 
-    <section class="education">
+    <section>
         <h2 class="header">Education</h2>
         {{ range .Site.Data.resume.education }}
-            <div class="education-item">
+            <div class="collapsible">
                 <div class="sidebar">
-                    <span class="sidebar-item course">{{ .area }} {{ .studyType }}</span>
-                    <span class="sidebar-item institution">{{ .institution }}</span>
+                    <span class="sidebar-item">{{ .area }} {{ .studyType }}</span>
+                    <span class="sidebar-item">{{ .institution }}</span>
                     {{ block "dateRange" . }}{{ end }}
                 </div>
                 <div class="main">
@@ -72,7 +73,7 @@
                         <div class="summary">{{ . }}</div>
                     {{ end }}
                     {{ with .courses }}
-                        <ul class="courses">
+                        <ul>
                             {{ range . }}
                                 <li>{{ . }}</li>
                             {{ end }}
@@ -83,19 +84,19 @@
         {{ end }}
     </section>
 
-    <section class="projects">
+    <section>
         <h2 class="header">Projects</h2>
         {{ range .Site.Data.resume.projects }}
-            <div class="projects-item">
+            <div class="collapsible">
                 <div class="sidebar">
-                    <span class="sidebar-item name">{{ .name }}</span>
+                    <span class="sidebar-item">{{ .name }}</span>
                     <span class="keywords">
                         {{ range .keywords }}
                             <span class="keyword">{{ . }}</span>
                         {{ end }}
                     </span>
                     {{ with .website }}
-                        <a href="{{ . }}" class="sidebar-item website">{{ . }}</a>
+                        <a href="{{ . }}" class="sidebar-item">{{ . }}</a>
                     {{ end }}
                 </div>
                 <div class="main">
@@ -107,13 +108,13 @@
         {{ end }}
     </section>
 
-    <section class="work">
+    <section>
         <h2 class="header">Work</h2>
         {{ range .Site.Data.resume.work }}
-            <div class="work-item">
+            <div class="collapsible">
                 <div class="sidebar">
-                    <span class="sidebar-item company">{{ .company }}</span>
-                    <span class="sidebar-item position">{{ .position }}</span>
+                    <span class="sidebar-item">{{ .company }}</span>
+                    <span class="sidebar-item">{{ .position }}</span>
                     {{ block "dateRange" . }}{{ end }}
                 </div>
                 <div class="main">
@@ -121,7 +122,7 @@
                         <div class="summary">{{ . | markdownify }}</div>
                     {{ end }}
                     {{ with .highlights }}
-                        <ol class="highlights">
+                        <ol>
                             {{ range . }}
                                 <li>{{ . | markdownify }}</li>
                             {{ end }}
@@ -150,13 +151,13 @@
     </section>
 
 
-    <section class="work">
+    <section>
         <h2 class="header">Volunteering</h2>
         {{ range .Site.Data.resume.volunteer }}
-            <div class="work-item">
+            <div class="collapsible">
                 <div class="sidebar">
-                    <span class="sidebar-item company">{{ .organization }}</span>
-                    <span class="sidebar-item position">{{ .position }}</span>
+                    <span class="sidebar-item">{{ .organization }}</span>
+                    <span class="sidebar-item">{{ .position }}</span>
                     {{ block "dateRange" . }}{{ end }}
                 </div>
                 <div class="main">
@@ -164,7 +165,7 @@
                         <div class="summary">{{ . | markdownify }}</div>
                     {{ end }}
                     {{ with .highlights }}
-                        <ol class="highlights">
+                        <ol>
                             {{ range . }}
                                 <li>{{ . | markdownify }}</span>
                             {{ end }}
@@ -191,12 +192,12 @@
         </div>
     </section>
 
-    <section class="interests">
+    <section>
         <h2 class="header">Interests</h2>
         {{ range .Site.Data.resume.interests }}
-            <div class="interests-item">
+            <div class="collapsible">
                 <div class="sidebar">
-                    <span class="sidebar-item name">{{ .name }}</span>
+                    <span class="sidebar-item">{{ .name }}</span>
                     <div class="keywords">
                         {{ range .keywords }}
                             <span class="keyword">{{ . }}</span>

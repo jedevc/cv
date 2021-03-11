@@ -174,15 +174,10 @@ ul, ol {
 .basics {
   text-align: center;
 
-  .website, .contact, .location {
-    color: #666;
-    font-style: italic;
-
-    .contact-item::after {
-      content: " • ";
-    }
-    .contact-item:last-child::after {
-      content: "";
+  .information {
+    & > * {
+      color: #666;
+      font-style: italic;
     }
   }
 
@@ -262,12 +257,6 @@ section {
     .summary {
       width: 100%;
     }
-  }
-}
-
-.education {
-  .education-item {
-    @extend .collapsible;
   }
 }
 
@@ -354,20 +343,3 @@ section {
   }
 }
 
-.work {
-  .work-item {
-    @extend .collapsible;
-  }
-}
-
-.interests {
-  .interests-item {
-    @extend .collapsible;
-  }
-}
-
-.projects {
-  .projects-item {
-    @extend .collapsible;
-  }
-}
