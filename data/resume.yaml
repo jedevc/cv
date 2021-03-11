@@ -1,9 +1,9 @@
 basics:
-  email: "hire@jedevc.com"
+  email: "me@jedevc.com"
   label: "Software Engineer"
   location:
     address: ""
-    city: "Smethwick"
+    city: ""
     countryCode: "UK"
     region: "West Midlands"
   name: "Justin Chadwell"
@@ -72,19 +72,6 @@ projects:
       easily with a Pythonic API.
 
 work:
-  - company: "Pexip"
-    position: "Software Intern"
-    website: "https://www.pexip.com/"
-    startDate: "2019-05-29"
-    endDate: ""
-    summary: ""
-    highlights:
-      - "Fixed various security-sensitive memory corruption and logic bugs in
-        gstreamer elements."
-      - "Improved testing and CI process by adding support for LLVM builds
-        with the clang compiler."
-      - "Added instrumentation to the build to allow for static analysis and
-        fuzzing."
   - company: "Progressive Accessibility Solutions"
     position: "Primary Front-End Developer"
     website: "https://progressiveaccess.com"
@@ -97,6 +84,19 @@ work:
         accessibility friendly layout."
       - "Setup Headless CMS and engineered CI/CD pipelines to facilitate
         automation."
+  - company: "Pexip"
+    position: "Software Intern"
+    website: "https://www.pexip.com/"
+    startDate: "2020-05-29"
+    endDate: "2020-09-23"
+    summary: ""
+    highlights:
+      - "Fixed various security-sensitive memory corruption and logic bugs in
+        gstreamer elements."
+      - "Improved testing and CI process by adding support for LLVM builds
+        with the clang compiler."
+      - "Added instrumentation to the build to allow for static analysis and
+        fuzzing."
   - company: "ARM"
     position: "Open Source Software Intern"
     website: "https://www.arm.com/"

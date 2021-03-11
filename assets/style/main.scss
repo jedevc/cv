@@ -77,6 +77,12 @@ a {
   }
 }
 
+ul, ol {
+  list-style-position: outside;
+  list-style-type: disc;
+  padding-left: 1em;
+}
+
 .date {
   display: inline-flex;
 
@@ -121,6 +127,24 @@ a {
 
     padding-right: 2em;
     word-break: break-word;
+
+    .sidebar-item:first-child {
+      font-weight: 600;
+    }
+    
+    .sidebar-item:nth-child(2) {
+      font-style: italic;
+    }
+
+    .sidebar-item:last-child {
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    .keywords {
+      float: right;
+      transform: translateY(-0.3em);
+    }
   }
 
   .main {
@@ -136,9 +160,9 @@ a {
 
     .sidebar {
       display: inline;
-    padding-right: 0;
+      padding-right: 0;
 
-      & > * {
+      & > .sidebar-item {
         &:not(:last-child)::after {
           content: ".";
         }
@@ -244,20 +268,6 @@ section {
 .education {
   .education-item {
     @extend .collapsible;
-
-    .course {
-      font-weight: 600;
-    }
-
-    .institution {
-      font-style: italic;
-    }
-
-    .courses {
-      list-style-type: disc;
-      list-style: outside;
-      padding-left: 1em;
-    }
   }
 }
 
@@ -295,31 +305,6 @@ section {
   }
 }
 
-.work {
-  .work-item {
-    @extend .collapsible;
-
-    .company {
-      font-weight: 600;
-    }
-
-    .position {
-      font-style: italic;
-    }
-
-    .summary {
-      text-indent: 1em;
-      margin-bottom: 0.8em;
-    }
-
-    .highlights {
-      list-style-position: outside;
-      list-style-type: disc;
-      padding-left: 1em;
-    }
-  }
-}
-
 .awards {
   font-size: 0.9em;
 
@@ -330,19 +315,22 @@ section {
 
   .award {
     margin: 0.6em;
-    display: flex;
-    flex-direction: column;
 
-    .title {
-      font-weight: 600;
-    }
+    .top {
+      display: flex;
+      flex-direction: column;
 
-    .awarder {
-      font-style: italic;
-    }
+      .title {
+        font-weight: 600;
+      }
 
-    .summary {
-      padding-top: 0.6em;
+      .awarder {
+        font-style: italic;
+      }
+
+      .summary {
+        padding-top: 0.6em;
+      }
     }
 
     border: 1px solid #ddd;
@@ -354,38 +342,32 @@ section {
       grid-template-columns: 1fr;
     }
     .award {
-      display: inline;
-
-      & > * {
-        &:not(:last-child)::after {
-          // content: ".";
+      .top {
+        display: inline;
+        & > * {
+          &:not(:last-child)::after {
+            content: ".";
+          }
         }
       }
     }
   }
 }
 
+.work {
+  .work-item {
+    @extend .collapsible;
+  }
+}
+
 .interests {
   .interests-item {
     @extend .collapsible;
-
-    .name {
-      font-weight: 600;
-    }
   }
 }
 
 .projects {
   .projects-item {
     @extend .collapsible;
-
-    .name {
-      font-weight: 600;
-    }
-
-    .keywords {
-      float: right;
-      transform: translateY(-0.3em);
-    }
   }
 }

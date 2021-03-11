@@ -5,7 +5,7 @@
 {{ end }}
 
 {{ define "dateRange" }}
-    <span class="date">
+    <span class="sidebar-item date">
         {{- if (eq .startDate .endDate) -}}
             {{- if .startDate -}}
                 <span class="only-date">{{ dateFormat "Jan 2006" .startDate }}</span>
@@ -39,13 +39,13 @@
             </div>
             <div class="location">
                 {{ with .location.address }}
-                    <span>{{ . }}</span>
+                    <span>{{ . }}</span>,
                 {{ end }}
                 {{ with .location.city }}
-                    <span>{{ . }}</span>
+                    <span>{{ . }}</span>,
                 {{ end }}
                 {{ with .location.region }}
-                    <span>{{ . }}</span>
+                    <span>{{ . }}</span>,
                 {{ end }}
                 {{ with .location.countryCode }}
                     <span>{{ . }}</span>
@@ -63,8 +63,8 @@
         {{ range .Site.Data.resume.education }}
             <div class="education-item">
                 <div class="sidebar">
-                    <span class="course">{{ .area }} {{ .studyType }}</span>
-                    <span class="institution">{{ .institution }}</span>
+                    <span class="sidebar-item course">{{ .area }} {{ .studyType }}</span>
+                    <span class="sidebar-item institution">{{ .institution }}</span>
                     {{ block "dateRange" . }}{{ end }}
                 </div>
                 <div class="main">
@@ -88,16 +88,14 @@
         {{ range .Site.Data.resume.projects }}
             <div class="projects-item">
                 <div class="sidebar">
-                    <div class="split">
-                        <span class="name">{{ .name }}</span>
-                        <span class="keywords">
-                            {{ range .keywords }}
-                                <span class="keyword">{{ . }}</span>
-                            {{ end }}
-                        </span>
-                    </div>
+                    <span class="sidebar-item name">{{ .name }}</span>
+                    <span class="keywords">
+                        {{ range .keywords }}
+                            <span class="keyword">{{ . }}</span>
+                        {{ end }}
+                    </span>
                     {{ with .website }}
-                        <a href="{{ . }}" class="website">{{ . }}</a>
+                        <a href="{{ . }}" class="sidebar-item website">{{ . }}</a>
                     {{ end }}
                 </div>
                 <div class="main">
@@ -114,8 +112,8 @@
         {{ range .Site.Data.resume.work }}
             <div class="work-item">
                 <div class="sidebar">
-                    <span class="company">{{ .company }}</span>
-                    <span class="position">{{ .position }}</span>
+                    <span class="sidebar-item company">{{ .company }}</span>
+                    <span class="sidebar-item position">{{ .position }}</span>
                     {{ block "dateRange" . }}{{ end }}
                 </div>
                 <div class="main">
@@ -157,8 +155,8 @@
         {{ range .Site.Data.resume.volunteer }}
             <div class="work-item">
                 <div class="sidebar">
-                    <span class="company">{{ .organization }}</span>
-                    <span class="position">{{ .position }}</span>
+                    <span class="sidebar-item company">{{ .organization }}</span>
+                    <span class="sidebar-item position">{{ .position }}</span>
                     {{ block "dateRange" . }}{{ end }}
                 </div>
                 <div class="main">
@@ -182,9 +180,11 @@
         <div class="awards-item">
         {{ range .Site.Data.resume.awards }}
             <div class="award">
-                <span class="title">{{ .title }}</span>
-                <span class="awarder">{{ .awarder }}</span>
-                <span class="date">{{ dateFormat "Jan 2006" .date }}</span>
+                <div class="top">
+                    <span class="title">{{ .title }}</span>
+                    <span class="awarder">{{ .awarder }}</span>
+                    <span class="date">{{ dateFormat "Jan 2006" .date }}</span>
+                </div>
                 <div class="summary">{{ .summary | markdownify }}</div>
             </div>
         {{ end }}
@@ -196,7 +196,7 @@
         {{ range .Site.Data.resume.interests }}
             <div class="interests-item">
                 <div class="sidebar">
-                    <span class="name">{{ .name }}</span>
+                    <span class="sidebar-item name">{{ .name }}</span>
                     <div class="keywords">
                         {{ range .keywords }}
                             <span class="keyword">{{ . }}</span>
