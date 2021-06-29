@@ -179,6 +179,15 @@ ul, ol {
       color: #666;
       font-style: italic;
     }
+
+    .information-part {
+      display: inline-block;
+    }
+    .information-part + .information-part {
+      &:before {
+        content: ", ";
+      }
+    }
   }
 
   .summary {

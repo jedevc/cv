@@ -5,3 +5,7 @@ title = "jedevc | CV"
 relativeURLs = true
 
 disableKinds = ["taxonomy", "taxonomyTerm"]
+
+[minify]
+minifyOutput = true
+

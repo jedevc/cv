@@ -35,21 +35,25 @@
                     <a href="{{ .website }}">{{ .website }}</a>
                 </div>
                 <div>
-                    <span>{{ .email }}</span>,
-                    <span>{{ .phone }}</span>
+                    {{ with .email }}
+                        <div class="information-part">{{ . }}</div>
+                    {{ end }}
+                    {{ with .phone }}
+                        <div class="information-part">{{ . }}</div>
+                    {{ end }}
                 </div>
                 <div>
                     {{ with .location.address }}
-                        <span>{{ . }}</span>,
+                        <div class="information-part">{{ . }}</div>
                     {{ end }}
                     {{ with .location.city }}
-                        <span>{{ . }}</span>,
+                        <div class="information-part">{{ . }}</div>
                     {{ end }}
                     {{ with .location.region }}
-                        <span>{{ . }}</span>,
+                        <div class="information-part">{{ . }}</div>
                     {{ end }}
                     {{ with .location.countryCode }}
-                        <span>{{ . }}</span>
+                        <div class="information-part">{{ . }}</div>
                     {{ end }}
                 </div>
             </div>
