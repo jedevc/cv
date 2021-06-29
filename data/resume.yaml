@@ -8,7 +8,7 @@ basics:
     region: "West Midlands"
   name: "Justin Chadwell"
   phone: ""
-  summary: "Computer Science Student working on awesome projects 🎉"
+  summary: "Software Engineer working on awesome projects 🎉"
   website: "https://jedevc.com"
 
 education:
@@ -16,11 +16,13 @@ education:
     studyType: "BSc"
     institution: "University of Birmingham"
     startDate: "2018-09-01"
-    summary: "Best modules:"
+    endDate: "2021-07-01"
     courses:
-      - "[97%] Logic and Computation (1st year)"
-      - "[99%] Programming in Java (1st year)"
-      - "[95%] Mathematical Foundations (1st year)"
+      - "[97%] Advanced Networking"
+      - "[96%] Algorithms and Complexity"
+      - "[95%] Programming Languages"
+      - "[94%] Security of Real-World Systems"
+      - "[86%] Final Year Project"
   - area: ""
     studyType: "A levels"
     institution: "KISC"
@@ -30,12 +32,6 @@ education:
       - "[A*] Computer Science"
       - "[A*] Mathematics"
       - "[A] English Language"
-  - area: ""
-    studyType: "IGCSEs"
-    institution: "KISC"
-    startDate: "2016-08-01"
-    endDate: "2017-06-01"
-    summary: "10 GCSEs, 9 A*s"
 
 projects:
   - name: "AppArea"
