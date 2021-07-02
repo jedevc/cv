@@ -206,12 +206,6 @@ awards:
     date: "2018-06-01"
     summary: |
       Excellence and outstanding performance in studied subjects.
-  - awarder: "KISC"
-    title: "Leadership Award"
-    date: "2018-06-01"
-    summary: |
-      Contributions to the community, including volunteer trips to
-      underprivileged villages.
 
 interests:
   - name: "Tech"
