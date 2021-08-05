@@ -18,33 +18,44 @@ education:
     startDate: "2018-09-01"
     endDate: "2021-07-01"
     courses:
-      - "[97%] Advanced Networking"
-      - "[96%] Algorithms and Complexity"
-      - "[95%] Programming Languages"
-      - "[94%] Security of Real-World Systems"
-      - "[86%] Final Year Project"
+      - "[**97%**] Advanced Networking"
+      - "[**96%**] Algorithms and Complexity"
+      - "[**95%**] Programming Languages"
+      - "[**94%**] Security of Real-World Systems"
+      - "[**86%**] Final Year Project"
   - area: ""
     studyType: "A levels"
     institution: "KISC"
     startDate: "2017-08-01"
     endDate: "2018-06-01"
     courses:
-      - "[A*] Computer Science"
-      - "[A*] Mathematics"
-      - "[A] English Language"
+      - "[**A\\***] Computer Science"
+      - "[**A\\***] Mathematics"
+      - "[**A**] English Language"
 
 projects:
+  - name: "Hack The Midlands CTF"
+    website: "https://github.com/jedevc/HackTheMidlandsCTF20"
+    keywords:
+      - "Hacking"
+      - "Linux"
+    summary: |
+      Capture the Flag competition for [Hack The Midlands](https://hackthemidlands.com/)
+      4.0 and 5.0.
+
+      I developed and ran a 8-challenge mini-event for the hackathon, involving
+      chatbots, dns servers, reverse-engineering and more! 
   - name: "AppArea"
-    website: "https://apparea.dev"
+    website: "https://github.com/jedevc/apparea"
     keywords:
       - "Go"
       - "Linux"
     summary: |
-      An entirely open-source port forwarding helper to localhost using SSH
-      tunnels.
+      An entirely open-source port forwarding helper from localhost built using
+      SSH tunnels.
 
       I built it out of a frustration that none of the existing tools in the area were
-      open source and had minimal client-side dependencies.
+      open source or had minimal client-side dependencies.
   - name: "bhamcal"
     website: "https://github.com/jedevc/bhamcal"
     keywords:
@@ -56,30 +67,20 @@ projects:
 
       The default university timetable interface was complex to navigate, so I
       constructed a command line tool to extract it into a variety of formats.
-  - name: "mafs"
-    website: "https://github.com/jedevc/mafs"
-    keywords:
-      - "Python"
-      - "Linux"
-    summary: |
-      Python wrapper for FUSE allowing creation of virtual filesystems.
-
-      A project I worked on to allow creating a variety of bizarre filesystems
-      easily with a Pythonic API.
 
 work:
   - company: "Progressive Accessibility Solutions"
-    position: "Primary Front-End Developer"
+    position: "Software Engineer"
     website: "https://progressiveaccess.com"
     startDate: "2019-11-01"
     endDate: ""
     summary: ""
     highlights:
-      - "Designed and created a new client-facing website from scratch."
-      - "Designed for adaptive screen sizes, including mobile, and ensured an
-        accessibility friendly layout."
-      - "Setup Headless CMS and engineered CI/CD pipelines to facilitate
-        automation."
+      - "Designed and created the new client-facing website from scratch using Jamstack."
+      - "Developed frontend, authentication, mailing and payment microservices
+        for the live chemistry SaaS platform."
+      - "Wrote CI/CD pipelines, developed tracing support, and produced Docker
+        images for improved automation and DevOps flow."
   - company: "Pexip"
     position: "Software Intern"
     website: "https://www.pexip.com/"
@@ -131,11 +132,13 @@ skills:
       - "CSS"
       - "Javascript"
       - "React"
+      - "Go"
   - name: "Systems"
     level: "Intermediate"
     keywords:
-      - "Compilers"
+      - "C/C++"
       - "Linux"
+      - "Compilers"
       - "Media"
   - name: "Security"
     level: "Intermediate"
@@ -164,15 +167,14 @@ volunteer:
     position: "Co-lead"
     website: "http://afnom.net/"
     startDate: "2018-10-01"
+    endDate: "2021-07-01"
     summary: ""
     highlights:
-      - "Represented the university in CTFs, as 2nd highest ranked UK
-        University team."
-      - "Developed CTFs for UoB's School of Computer Science and INRIA's 2019
-        SILM summer school."
-      - "Designed and created challenges spanning multiple areas within
-        cybersecurity."
-      - "Managed infrastructure hosted on Google Cloud Platform."
+      - "Represented the university in CTFs as a top 10 ranked UK team."
+      - "Developed WhatTheCTF competitions for UoB's School of Computer
+        Science and INRIA's 2019 SILM summer school."
+      - "Managed infrastructure on Google Cloud Platform and Hetzner using
+        Docker and Kubernetes."
   - organization: "Computer Science Society"
     position: "Vice President"
     website: "http://cssbham.com/"
@@ -190,32 +192,36 @@ volunteer:
 
 awards:
   - awarder: "University of Birmingham"
-    title: "CS Undergraduate Prize"
-    date: "2019-12-01"
+    title: "Best Student BSc Computer Science"
+    date: "2021-07-15"
     summary: |
-      Achieved the highest combined weighted average in first year Computer
-      Science.
+      I was top of my graduating cohort for BSc Computer Science in 2021.
   - awarder: "University of Birmingham"
-    title: "EPS Event of the Year (shortlisted)"
-    date: "2019-06-01"
+    title: "CSS and AFNOM Member of the Year"
+    date: "2021-07-22"
     summary: |
-      [WhatTheCTF 2019](https://afnom.net/wtctf19/), a custom-built
-      cybersecurity competition designed by students for students.
-  - awarder: "KISC"
-    title: "Academic Excellence Award"
-    date: "2018-06-01"
+      I was made member of the year for both [CSS](https://cssbham.com) and
+      [AFNOM](https://afnom.net), which I've been an active part of since my first year.
+  - awarder: "University of Birmingham"
+    title: "Great Achievement in EPS (shortlisted)"
+    date: "2021-07-22"
     summary: |
-      Excellence and outstanding performance in studied subjects.
+      I was nominated and shortlisted for Great Achievement of the Year, which
+      recognizes outstanding contributions to the College.
 
 interests:
   - name: "Tech"
     summary: |
-      A bit traditional, but I enjoy tinkering with a number of techy projects
-      at home while I have a few spare moments.
-  - name: "Travel"
+      I enjoy tinkering with a number of technical projects at home whenever I
+      have a few spare moments. I'm also attempting to branch into blogging
+      more regularly, producing technical content and tutorials for both
+      beginners and experienced developers.
+  - name: "Gaming"
     summary: |
-      Having grown up overseas, I love international travel whenever I can!
+      I love playing games, from a variety of board and card games with a group
+      of friends, all the way to single-player games on my computer at home (I
+      do love a good roguelike).
   - name: "Food"
     summary: |
       I'm always up for trying new food, and regularly try and find new places
-      to eat out. I also really enjoy cooking at home for fun!
+      to eat out wherever I am. I also really enjoy cooking at home for fun!
