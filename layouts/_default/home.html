@@ -35,26 +35,26 @@
                     <a href="{{ .website }}">{{ .website }}</a>
                 </div>
                 <div>
-                    {{ with .email }}
+                    {{- with .email -}}
                         <div class="information-part">{{ . }}</div>
-                    {{ end }}
-                    {{ with .phone }}
+                    {{- end -}}
+                    {{- with .phone -}}
                         <div class="information-part">{{ . }}</div>
-                    {{ end }}
+                    {{- end -}}
                 </div>
                 <div>
-                    {{ with .location.address }}
+                    {{- with .location.address -}}
                         <div class="information-part">{{ . }}</div>
-                    {{ end }}
-                    {{ with .location.city }}
+                    {{- end -}}
+                    {{- with .location.city -}}
                         <div class="information-part">{{ . }}</div>
-                    {{ end }}
-                    {{ with .location.region }}
+                    {{- end -}}
+                    {{- with .location.region -}}
                         <div class="information-part">{{ . }}</div>
-                    {{ end }}
-                    {{ with .location.countryCode }}
+                    {{- end -}}
+                    {{- with .location.countryCode -}}
                         <div class="information-part">{{ . }}</div>
-                    {{ end }}
+                    {{- end -}}
                 </div>
             </div>
             {{ with .summary }}
@@ -79,7 +79,7 @@
                     {{ with .courses }}
                         <ul>
                             {{ range . }}
-                                <li>{{ . }}</li>
+                                <li>{{ . | markdownify }}</li>
                             {{ end }}
                         </ul>
                     {{ end }}
