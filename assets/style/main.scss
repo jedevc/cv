@@ -69,6 +69,10 @@ footer {
     margin: 0;
     bottom: 0;
   }
+  
+  .print-hidden {
+    display: none;
+  }
 }
 
 a {
@@ -137,6 +141,10 @@ ul, ol {
 
     .sidebar-item:first-child {
       font-weight: 600;
+      a {
+        text-decoration: none;
+        color: black !important;
+      }
     }
     
     .sidebar-item:nth-child(2) {
@@ -150,7 +158,6 @@ ul, ol {
 
     .sidebar-keywords {
       float: right;
-      transform: translateY(-0.3em);
     }
   }
 

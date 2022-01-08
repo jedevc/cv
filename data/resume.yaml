@@ -5,7 +5,7 @@ basics:
     address: ""
     city: ""
     countryCode: "UK"
-    region: "West Midlands"
+    region: "Berkshire"
   name: "Justin Chadwell"
   phone: ""
   summary: "Software Engineer working on awesome projects 🎉"
@@ -69,55 +69,45 @@ projects:
       constructed a command line tool to extract it into a variety of formats.
 
 work:
-  - company: "Progressive Accessibility Solutions"
+  - company: "Pexip"
     position: "Software Engineer"
-    website: "https://progressiveaccess.com"
-    startDate: "2019-11-01"
+    startDate: "2021-09-01"
     endDate: ""
     summary: ""
     highlights:
-      - "Designed and created the new client-facing website from scratch using Jamstack."
-      - "Developed frontend, authentication, mailing and payment microservices
-        for the live chemistry SaaS platform."
-      - "Wrote CI/CD pipelines, developed tracing support, and produced Docker
-        images for improved automation and DevOps flow."
+      - "Debug complex low-level media crashes from production environments."
+      - "Improve fuzzing and static analysis tooling to detect more security issues."
+      - "Maintain build systems and CI/CD to ensure smooth internal workflows."
+  - company: "Progressive Accessibility Solutions"
+    position: "Software Engineer"
+    startDate: "2019-11-01"
+    endDate: "2022-01-01"
+    summary: ""
+    highlights:
+      - "Designed and created the new Jamstack landing page from scratch."
+      - "Developed a frontend and various microservices for the Chemistry SaaS."
+      - "Wrote CI/CD pipelines and Docker images for improved automation flows."
   - company: "Pexip"
     position: "Software Intern"
-    website: "https://www.pexip.com/"
     startDate: "2020-05-29"
     endDate: "2020-09-23"
     summary: ""
     highlights:
-      - "Fixed various security-sensitive memory corruption and logic bugs in
-        gstreamer elements."
-      - "Improved testing and CI process by adding support for LLVM builds
-        with the clang compiler."
+      - "Fixed security-sensitive memory corruption bugs in gstreamer plugins."
+      - "Improved testing and CI process by adding support for LLVM builds."
       - "Added instrumentation to the build to allow for static analysis and
         fuzzing."
   - company: "ARM"
     position: "Open Source Software Intern"
-    website: "https://www.arm.com/"
     startDate: "2019-06-01"
     endDate: "2019-09-01"
     summary: ""
     highlights:
-      - "Wrote C and A64/A32 to add support for next-gen ARM security features in
-        firmware."
-      - "Improved build processes and tests for Trusted Firmware A in the OSS
-        group."
+      - "Introduced support for next-gen ARM security features in firmware."
+      - "Improved build processes for Trusted Firmware A in the OSS group."
       - "Presented to engineers in the Open Source Software Group about using the
         Undefined Behavior Sanitizer in firmware, an area I researched while
         interning."
-  - company: "Context Information Security"
-    position: "Brand Ambassador"
-    website: "https://www.contextis.com/"
-    startDate: "2019-01-01"
-    endDate: "2019-06-01"
-    summary: ""
-    highlights:
-      - "Promoted Context IS to students at the University of Birmingham."
-      - "Attended conferences to represent the company, interacted with potential
-        hires and shared job opportunities with graduates."
 
 skills:
   - name: "Scripting"
@@ -152,18 +142,7 @@ skills:
       - "Tech lead"
 
 volunteer:
-  - organization: "HackTheMidlands"
-    position: "Organizer"
-    website: "http://hackthemidlands.com/"
-    startDate: "2019-06-01"
-    summary: ""
-    highlights:
-      - "Helped plan and organize a hackathon of over 250 attendees."
-      - "Built and deployed a number of web services to enhance attendee
-        experience."
-      - "Designed and ran a CTF, accessible to attendees of all ages and skill
-        levels."
-  - organization: "AFNOM hacking club"
+  - organization: "AFNOM"
     position: "Co-lead"
     website: "http://afnom.net/"
     startDate: "2018-10-01"
@@ -189,6 +168,18 @@ volunteer:
         workshops."
       - "Became a Google Student Developer Club Lead to include more workshops
         and talks."
+  - organization: "HackTheMidlands"
+    position: "Organizer"
+    website: "http://hackthemidlands.com/"
+    startDate: "2019-06-01"
+    endDate: "2020-10-01"
+    summary: ""
+    highlights:
+      - "Helped plan and organize a hackathon of over 250 attendees."
+      - "Built and deployed a number of web services to enhance attendee
+        experience."
+      - "Designed and ran a CTF, accessible to attendees of all ages and skill
+        levels."
 
 awards:
   - awarder: "University of Birmingham"

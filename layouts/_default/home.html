@@ -26,6 +26,10 @@
     </span>
 {{ end }}
 
+{{ define "link-icon" }}
+    <span class="print-hidden">&#8599;</span>
+{{ end }}
+
 {{ define "main" }}
     <section class="basics">
         {{ with .Site.Data.resume.basics }}
@@ -89,35 +93,20 @@
     </section>
 
     <section>
-        <h2 class="header">Projects</h2>
-        {{ range .Site.Data.resume.projects }}
-            <div class="collapsible">
-                <div class="sidebar">
-                    <span class="sidebar-item">{{ .name }}</span>
-                    <span class="sidebar-keywords">
-                        {{ range .keywords }}
-                            <span class="keyword">{{ . }}</span>
-                        {{ end }}
-                    </span>
-                    {{ with .website }}
-                        <a href="{{ . }}" class="sidebar-item">{{ . }}</a>
-                    {{ end }}
-                </div>
-                <div class="main">
-                    {{ with .summary }}
-                        <div>{{ . | markdownify }}</div>
-                    {{ end }}
-                </div>
-            </div>
-        {{ end }}
-    </section>
-
-    <section>
         <h2 class="header">Work</h2>
         {{ range .Site.Data.resume.work }}
             <div class="collapsible">
                 <div class="sidebar">
-                    <span class="sidebar-item">{{ .company }}</span>
+                    <span class="sidebar-item">
+                        {{ with .website }}
+                            <a href="{{ . }}">
+                        {{ end }}
+                        {{ .company }}
+                        {{ with .website }}
+                            {{ block "link-icon" . }}{{ end }}
+                            </a>
+                        {{ end }}
+                    </span>
                     <span class="sidebar-item">{{ .position }}</span>
                     {{ block "dateRange" . }}{{ end }}
                 </div>
@@ -136,6 +125,37 @@
             </div>
         {{ end }}
     </section>
+
+    <section>
+        <h2 class="header">Projects</h2>
+        {{ range .Site.Data.resume.projects }}
+            <div class="collapsible">
+                <div class="sidebar">
+                    <span class="sidebar-item">
+                        {{ with .website }}
+                            <a href="{{ . }}">
+                        {{ end }}
+                        {{ .name }}
+                        {{ with .website }}
+                            {{ block "link-icon" . }}{{ end }}
+                            </a>
+                        {{ end }}
+                    </span>
+                    <span class="sidebar-keywords">
+                        {{ range .keywords }}
+                            <span class="keyword">{{ . }}</span>
+                        {{ end }}
+                    </span>
+                </div>
+                <div class="main">
+                    {{ with .summary }}
+                        <div>{{ . | markdownify }}</div>
+                    {{ end }}
+                </div>
+            </div>
+        {{ end }}
+    </section>
+
 
     <section>
         <h2 class="header">Skills</h2>
@@ -157,13 +177,21 @@
         {{ end }}
     </section>
 
-
     <section>
         <h2 class="header">Volunteering</h2>
         {{ range .Site.Data.resume.volunteer }}
             <div class="collapsible">
                 <div class="sidebar">
-                    <span class="sidebar-item">{{ .organization }}</span>
+                    <span class="sidebar-item">
+                        {{ with .website }}
+                            <a href="{{ . }}">
+                        {{ end }}
+                        {{ .organization }}
+                        {{ with .website }}
+                            {{ block "link-icon" . }}{{ end }}
+                            </a>
+                        {{ end }}
+                    </span>
                     <span class="sidebar-item">{{ .position }}</span>
                     {{ block "dateRange" . }}{{ end }}
                 </div>
@@ -174,7 +202,7 @@
                     {{ with .highlights }}
                         <ol>
                             {{ range . }}
-                                <li>{{ . | markdownify }}</span>
+                                <li>{{ . | markdownify }}</li>
                             {{ end }}
                         </ol>
                     {{ end }}
