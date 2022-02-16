@@ -68,31 +68,6 @@
     </section>
 
     <section>
-        <h2 class="header">Education</h2>
-        {{ range .Site.Data.resume.education }}
-            <div class="collapsible">
-                <div class="sidebar">
-                    <span class="sidebar-item">{{ .area }} {{ .studyType }}</span>
-                    <span class="sidebar-item">{{ .institution }}</span>
-                    {{ block "dateRange" . }}{{ end }}
-                </div>
-                <div class="main">
-                    {{ with .summary }}
-                        <div>{{ . }}</div>
-                    {{ end }}
-                    {{ with .courses }}
-                        <ul>
-                            {{ range . }}
-                                <li>{{ . | markdownify }}</li>
-                            {{ end }}
-                        </ul>
-                    {{ end }}
-                </div>
-            </div>
-        {{ end }}
-    </section>
-
-    <section>
         <h2 class="header">Work</h2>
         {{ range .Site.Data.resume.work }}
             <div class="collapsible">
@@ -120,6 +95,31 @@
                                 <li>{{ . | markdownify }}</li>
                             {{ end }}
                         </ol>
+                    {{ end }}
+                </div>
+            </div>
+        {{ end }}
+    </section>
+
+    <section>
+        <h2 class="header">Education</h2>
+        {{ range .Site.Data.resume.education }}
+            <div class="collapsible">
+                <div class="sidebar">
+                    <span class="sidebar-item">{{ .area }} {{ .studyType }}</span>
+                    <span class="sidebar-item">{{ .institution }}</span>
+                    {{ block "dateRange" . }}{{ end }}
+                </div>
+                <div class="main">
+                    {{ with .summary }}
+                        <div>{{ . }}</div>
+                    {{ end }}
+                    {{ with .courses }}
+                        <ul>
+                            {{ range . }}
+                                <li>{{ . | markdownify }}</li>
+                            {{ end }}
+                        </ul>
                     {{ end }}
                 </div>
             </div>
@@ -212,9 +212,9 @@
     </section>
 
     <section>
-        <h2 class="header">Awards</h2>
+        <h2 class="header">Achievements</h2>
         <div class="grid">
-        {{ range .Site.Data.resume.awards }}
+        {{ range .Site.Data.resume.achievements }}
             <div class="grid-item">
                 <div class="top">
                     <span class="top-item">{{ .title }}</span>

@@ -133,6 +133,9 @@ ul, ol {
 
   .sidebar {
     flex: 1 1 30%;
+    @media only print {
+      flex: 1 1 20%;
+    }
     display: inline-flex;
     flex-direction: column;
 
@@ -337,10 +340,8 @@ section {
     border: 1px solid #ddd;
     padding: 1em;
   }
-}
 
-@media only screen and (max-width: 800px) {
-  .grid {
+  @media only screen and (max-width: 800px) {
     grid-template-columns: 1fr;
 
     .award {
@@ -354,5 +355,8 @@ section {
       }
     }
   }
+  
+  @media only print {
+    margin-bottom: 2em;
+  }
 }
-

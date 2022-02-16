@@ -5,7 +5,7 @@ basics:
     address: ""
     city: ""
     countryCode: "UK"
-    region: "Berkshire"
+    region: ""
   name: "Justin Chadwell"
   phone: ""
   summary: "Software Engineer working on awesome projects 🎉"
@@ -43,8 +43,9 @@ projects:
       Capture the Flag competition for [Hack The Midlands](https://hackthemidlands.com/)
       4.0 and 5.0.
 
-      I developed and ran a 8-challenge mini-event for the hackathon, involving
-      chatbots, dns servers, reverse-engineering and more! 
+      I developed a CTF mini-event over both years, involving chatbots, DNS
+      servers, hackable games, providing an introduction to computer security
+      for attendees.
   - name: "AppArea"
     website: "https://github.com/jedevc/apparea"
     keywords:
@@ -74,37 +75,48 @@ work:
     startDate: "2021-09-01"
     endDate: ""
     summary: ""
+    website: https://pexip.com
     highlights:
-      - "Debug complex low-level media crashes from production environments."
-      - "Improve fuzzing and static analysis tooling to detect more security issues."
-      - "Maintain build systems and CI/CD to ensure smooth internal workflows."
-  - company: "Progressive Accessibility Solutions"
+      - "Designed internal fuzzing and static analysis pipelines to automate
+        bug hunting and increase visibility of security issues."
+      - "Maintained build systems, CI/CD infrastructure and developer tooling
+        to enable developer productivity and communication across teams."
+      - "Investigated complex low-level video codec issues from production
+        environments."
+      - "Assisted in hiring processes by reviewing homeworks and interviewing
+        candidates."
+  - company: "Progressive Access"
     position: "Software Engineer"
     startDate: "2019-11-01"
     endDate: "2022-01-01"
+    website: https://progressiveaccess.com
     summary: ""
     highlights:
-      - "Designed and created the new Jamstack landing page from scratch."
-      - "Developed a frontend and various microservices for the Chemistry SaaS."
-      - "Wrote CI/CD pipelines and Docker images for improved automation flows."
+      - "Designed and developed a new Jamstack home site and blog from scratch."
+      - "Created a frontend as well as authentication, payment and mailing
+        microservices for the Live Chemistry SaaS platform."
+      - "Wrote CI/CD pipelines utilizing Terraform and Docker to automate
+        deployment."
   - company: "Pexip"
     position: "Software Intern"
     startDate: "2020-05-29"
     endDate: "2020-09-23"
     summary: ""
+    website: https://dev.pexip.com
     highlights:
-      - "Fixed security-sensitive memory corruption bugs in gstreamer plugins."
+      - "Added instrumentation to Pexip Infinity to allow for static analysis
+        and fuzzing."
       - "Improved testing and CI process by adding support for LLVM builds."
-      - "Added instrumentation to the build to allow for static analysis and
-        fuzzing."
+      - "Fixed security-sensitive memory corruption bugs in gstreamer plugins."
   - company: "ARM"
-    position: "Open Source Software Intern"
+    position: "Software Intern"
     startDate: "2019-06-01"
     endDate: "2019-09-01"
     summary: ""
+    website: https://www.arm.com/
     highlights:
-      - "Introduced support for next-gen ARM security features in firmware."
-      - "Improved build processes for Trusted Firmware A in the OSS group."
+      - "Introduced support for next-gen ARM security features in open-source
+        firmware."
       - "Presented to engineers in the Open Source Software Group about using the
         Undefined Behavior Sanitizer in firmware, an area I researched while
         interning."
@@ -115,31 +127,28 @@ skills:
     keywords:
       - "Python"
       - "Bash"
-  - name: "Web Development"
-    level: "Advanced"
-    keywords:
-      - "HTML"
-      - "CSS"
-      - "Javascript"
-      - "React"
-      - "Go"
+      - "Docker"
   - name: "Systems"
     level: "Intermediate"
     keywords:
       - "C/C++"
+      - "Go"
+      - "Rust"
       - "Linux"
       - "Compilers"
-      - "Media"
+      - "Codecs"
   - name: "Security"
     level: "Intermediate"
     keywords:
-      - "Exploitation"
-      - "Reverse Engineering"
-      - "Linux"
-  - name: "Leadership"
+      - "Fuzzing"
+      - "Reverse engineering"
+      - "Static analysis"
+  - name: "Frontend Development"
+    level: "Intermediate"
     keywords:
-      - "Event organization"
-      - "Tech lead"
+      - "HTML/CSS"
+      - "Javascript"
+      - "React"
 
 volunteer:
   - organization: "AFNOM"
@@ -151,7 +160,7 @@ volunteer:
     highlights:
       - "Represented the university in CTFs as a top 10 ranked UK team."
       - "Developed WhatTheCTF competitions for UoB's School of Computer
-        Science and INRIA's 2019 SILM summer school."
+        Science and [INRIA's 2019 SILM summer school](https://silm-school.inria.fr/ctf/)."
       - "Managed infrastructure on Google Cloud Platform and Hetzner using
         Docker and Kubernetes."
   - organization: "Computer Science Society"
@@ -166,6 +175,8 @@ volunteer:
         Universities."
       - "Organized and ran a number of events, including hackathons, talks and
         workshops."
+      - "Re-designed the society's website to engage students and provide
+        a hub for important information and news."
       - "Became a Google Student Developer Club Lead to include more workshops
         and talks."
   - organization: "HackTheMidlands"
@@ -181,24 +192,26 @@ volunteer:
       - "Designed and ran a CTF, accessible to attendees of all ages and skill
         levels."
 
-awards:
+achievements:
   - awarder: "University of Birmingham"
-    title: "Best Student BSc Computer Science"
+    title: "Top Marks in BSc Computer Science"
     date: "2021-07-15"
     summary: |
-      I was top of my graduating cohort for BSc Computer Science in 2021.
+      I scored the highest total mark in my graduating cohort for BSc Computer
+      Science in 2021.
   - awarder: "University of Birmingham"
     title: "CSS and AFNOM Member of the Year"
     date: "2021-07-22"
     summary: |
-      I was made member of the year for both [CSS](https://cssbham.com) and
-      [AFNOM](https://afnom.net), which I've been an active part of since my first year.
+      I was member of the year for both [CSS](https://cssbham.com) and
+      [AFNOM](https://afnom.net), which I've been an active part of since my
+      first year.
   - awarder: "University of Birmingham"
     title: "Great Achievement in EPS (shortlisted)"
     date: "2021-07-22"
     summary: |
-      I was nominated and shortlisted for Great Achievement of the Year, which
-      recognizes outstanding contributions to the College.
+      I was recognized for my contributions to the EPS college for my
+      volunteering work.
 
 interests:
   - name: "Tech"
