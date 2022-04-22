@@ -70,10 +70,19 @@ projects:
       constructed a command line tool to extract it into a variety of formats.
 
 work:
+  - company: "Docker"
+    position: "Software Engineer"
+    startDate: "2022-04-05"
+    endDate: ""
+    summary: ""
+    website: https://docker.com
+    highlights:
+      - "Improving software supply chain security with the build team."
+      - "Contributing to various Docker-operated open source projects."
   - company: "Pexip"
     position: "Software Engineer"
     startDate: "2021-09-01"
-    endDate: ""
+    endDate: "2022-03-25"
     summary: ""
     website: https://pexip.com
     highlights:
@@ -97,17 +106,17 @@ work:
         microservices for the Live Chemistry SaaS platform."
       - "Wrote CI/CD pipelines utilizing Terraform and Docker to automate
         deployment."
-  - company: "Pexip"
-    position: "Software Intern"
-    startDate: "2020-05-29"
-    endDate: "2020-09-23"
-    summary: ""
-    website: https://dev.pexip.com
-    highlights:
-      - "Added instrumentation to Pexip Infinity to allow for static analysis
-        and fuzzing."
-      - "Improved testing and CI process by adding support for LLVM builds."
-      - "Fixed security-sensitive memory corruption bugs in gstreamer plugins."
+  # - company: "Pexip"
+  #   position: "Software Intern"
+  #   startDate: "2020-05-29"
+  #   endDate: "2020-09-23"
+  #   summary: ""
+  #   website: https://dev.pexip.com
+  #   highlights:
+  #     - "Added instrumentation to Pexip Infinity to allow for static analysis
+  #       and fuzzing."
+  #     - "Improved testing and CI process by adding support for LLVM builds."
+  #     - "Fixed security-sensitive memory corruption bugs in gstreamer plugins."
   - company: "ARM"
     position: "Software Intern"
     startDate: "2019-06-01"
