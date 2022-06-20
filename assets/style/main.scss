@@ -77,14 +77,15 @@ footer {
 
 a {
   transition: 0.2s color;
-  color: $highlight;
+  color: $highlight-link;
+  font-weight: 600;
 
   &:visited {
-    color: $highlight;
+    color: $highlight-link;
   }
 
   &:hover {
-    color: $highlight-dark;
+    color: darken($highlight-link, 10%);
   }
 }
 
@@ -122,7 +123,7 @@ ul, ol {
   padding-left: 0.4em;
   padding-right: 0.4em;
   border-radius: 0.5em;
-  color: #ddf;
+  color: $highlighted-text;
 
   line-height: 2em;
 }
@@ -237,7 +238,7 @@ section {
 
   .header {
     font-variant: small-caps;
-    color: $highlight;
+    color: $highlight-header;
   }
 }
 
