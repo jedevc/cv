@@ -1,4 +1,3 @@
-@import "colors";
 @import "fonts";
 
 body {
@@ -42,14 +41,14 @@ body {
 header {
   width: 100%;
   height: 8px;
-  background: $highlight;
+  background: var(--highlight);
   margin-top: 8px;
 }
 
 footer {
   width: 100%;
   height: 8px;
-  background: $highlight;
+  background: var(--highlight);
   margin-bottom: 8px;
 }
 
@@ -77,15 +76,15 @@ footer {
 
 a {
   transition: 0.2s color;
-  color: $highlight-link;
+  color: var(--highlight-link);
   font-weight: 600;
 
   &:visited {
-    color: $highlight-link;
+    color: var(--highlight-link);
   }
 
   &:hover {
-    color: darken($highlight-link, 10%);
+    color: var(--highlight-link-visited);
   }
 }
 
@@ -117,13 +116,13 @@ ul, ol {
 }
 
 .keyword {
-  background: $highlight;
+  background: var(--highlight);
   padding-top: 0.1em;
   padding-bottom: 0.1em;
   padding-left: 0.4em;
   padding-right: 0.4em;
   border-radius: 0.5em;
-  color: $highlighted-text;
+  color: var(--highlighted-text);
 
   line-height: 2em;
 }
@@ -238,7 +237,7 @@ section {
 
   .header {
     font-variant: small-caps;
-    color: $highlight-header;
+    color: var(--highlight-header);
   }
 }
 

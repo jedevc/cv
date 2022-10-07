@@ -10,7 +10,10 @@ personal:
   phone: ""
   content: "Software Engineer working on awesome projects 🎉"
   website: "https://jedevc.com"
-    
+
+styles:
+  highlight: "#ffd832"
+
 sections:
   - name: Work
     entries:
@@ -116,7 +119,7 @@ sections:
 
           The default university timetable interface was complex to navigate, so I
           constructed a command line tool to extract it into a variety of formats.
-  
+
   - name: Skills
     minimal: true
     entries:
@@ -143,7 +146,7 @@ sections:
           - "HTML/CSS"
           - "Javascript"
           - "React"
-            
+
   - name: Volunteering
     entries:
       - title: "AFNOM"
@@ -186,7 +189,7 @@ sections:
 
   - name: Achievements
     boxes:
-      - title: "Top Marks in BSc Computer Science" 
+      - title: "Top Marks in BSc Computer Science"
         subtitle: "University of Birmingham"
         endDate: "2021-07-15"
         content: |

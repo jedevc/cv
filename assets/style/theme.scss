@@ -1,0 +1,11 @@
+{{ with .Site.Params.styles }}
+$highlight: {{ .highlight }};
+:root {
+    --highlight: #{$highlight};
+    --highlight-header: #{darken($highlight, 12%)};
+    --highlight-link: #{darken($highlight, 15%)};
+    --highlight-link-visited: #{darken($highlight, 25%)};
+
+    --highlighted-text: inherit;
+}
+{{ end }}

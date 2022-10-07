@@ -1,6 +1,10 @@
 {{ define "head" }}
+    {{ $sass := resources.Get "style/theme.scss" }}
+    {{ $style := $sass | resources.ExecuteAsTemplate "style/theme.scss" . | resources.ToCSS | minify | fingerprint }}
+    <link rel="stylesheet" type="text/css" href="{{ $style.RelPermalink }}" />
+
     {{ $sass := resources.Get "style/main.scss" }}
-    {{ $style := $sass | resources.ToCSS }}
+    {{ $style := $sass | resources.ToCSS | minify | fingerprint }}
     <link rel="stylesheet" type="text/css" href="{{ $style.RelPermalink }}" />
 {{ end }}
 
@@ -40,7 +44,7 @@
             {{ end }}
         {{ end }}
     </section>
-    
+
     {{ range .Site.Params.sections }}
         <section>
             <h2 class="header">{{ .name }}</h2>
