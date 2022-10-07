@@ -8,4 +8,3 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
 
 [minify]
 minifyOutput = true
-

@@ -32,7 +32,7 @@
 
 {{ define "main" }}
     <section class="basics">
-        {{ with .Site.Data.resume.basics }}
+        {{ with .Site.Params.basics }}
             <h1>{{ .name }}</h1>
             <div class="information">
                 <div>
@@ -69,7 +69,7 @@
 
     <section>
         <h2 class="header">Work</h2>
-        {{ range .Site.Data.resume.work }}
+        {{ range .Site.Params.work }}
             <div class="collapsible">
                 <div class="sidebar">
                     <span class="sidebar-item">
@@ -103,7 +103,7 @@
 
     <section>
         <h2 class="header">Education</h2>
-        {{ range .Site.Data.resume.education }}
+        {{ range .Site.Params.education }}
             <div class="collapsible">
                 <div class="sidebar">
                     <span class="sidebar-item">{{ .area }} {{ .studyType }}</span>
@@ -128,7 +128,7 @@
 
     <section>
         <h2 class="header">Projects</h2>
-        {{ range .Site.Data.resume.projects }}
+        {{ range .Site.Params.projects }}
             <div class="collapsible">
                 <div class="sidebar">
                     <span class="sidebar-item">
@@ -159,7 +159,7 @@
 
     <section>
         <h2 class="header">Skills</h2>
-        {{ range .Site.Data.resume.skills }}
+        {{ range .Site.Params.skills }}
             <div class="collapsible-minimal">
                 <div class="sidebar">
                     <span class="name">{{ .name }}</span>
@@ -179,7 +179,7 @@
 
     <section>
         <h2 class="header">Volunteering</h2>
-        {{ range .Site.Data.resume.volunteer }}
+        {{ range .Site.Params.volunteer }}
             <div class="collapsible">
                 <div class="sidebar">
                     <span class="sidebar-item">
@@ -214,7 +214,7 @@
     <section>
         <h2 class="header">Achievements</h2>
         <div class="grid">
-        {{ range .Site.Data.resume.achievements }}
+        {{ range .Site.Params.achievements }}
             <div class="grid-item">
                 <div class="top">
                     <span class="top-item">{{ .title }}</span>
@@ -229,7 +229,7 @@
 
     <section>
         <h2 class="header">Interests</h2>
-        {{ range .Site.Data.resume.interests }}
+        {{ range .Site.Params.interests }}
             <div class="collapsible">
                 <div class="sidebar">
                     <span class="sidebar-item">{{ .name }}</span>
