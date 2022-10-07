@@ -4,20 +4,21 @@
 
 My personal CV, at <https://cv.jedevc.com>.
 
-The single page on the site is generated from `data/resume.yaml`, whose
-format was originally loosely inspired by [JSON Resume](https://jsonresume.org/),
-but has since taken on a bit of a life of it's own.
+The single page on the site is generated using the parameters in
+[config/_default/params.yaml](https://github.com/jedevc/cv/blob/master/config/_default/params.yaml),
+while site-wide configuration can be found in
+[config/_default/config.toml](https://github.com/jedevc/cv/blob/master/config/_default/config.toml).
 
 ## Development
 
 Ensure [hugo](https://gohugo.io) is installed.
 
     $ git clone https://github.com/jedevc/cv.git
-    $ cd cd
+    $ cd cv
 
 Run a live site preview:
 
-    $ hugo server
+    $ hugo serve
 
 Build the site:
 
@@ -27,5 +28,5 @@ Build the site:
 
 This software is released under the UNLICENSE.
 
-However, the contents of `data/resume.yaml` is personal information, and is
-therefore withheld from the UNLICENSE.
+The contents of `config/_default/config.toml` is personal information, and is
+withheld with all rights reserved.
