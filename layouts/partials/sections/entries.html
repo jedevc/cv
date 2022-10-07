@@ -1,0 +1,31 @@
+{{ $minimal := .minimal }}
+{{ range .entries }}
+    <div class="{{ if $minimal }}collapsible-minimal{{ else }}collapsible{{end}}">
+        <div class="sidebar">
+            {{ if .title }}
+                <span class="sidebar-item">
+                    {{ with .website }}
+                        <a href="{{ . }}">
+                    {{ end }}
+                    {{ .title | markdownify }}
+                    {{ with .website }}
+                        <span class="print-hidden">&#8599;</span>
+                        </a>
+                    {{ end }}
+                </span>
+            {{ end }}
+            {{ if .subtitle }}
+                <span class="sidebar-item">{{ .subtitle | markdownify }}</span>
+            {{ end }}
+            {{ partial "components/date-range" . }}
+            <span class="sidebar-keywords">
+                {{ range .keywords }}
+                    <span class="keyword">{{ . | markdownify }}</span>
+                {{ end }}
+            </span>
+        </div>
+        <div class="main">
+            <div>{{ .content | markdownify }}</div>
+        </div>
+    </div>
+{{ end }}

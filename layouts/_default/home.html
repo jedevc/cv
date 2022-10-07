@@ -4,35 +4,9 @@
     <link rel="stylesheet" type="text/css" href="{{ $style.RelPermalink }}" />
 {{ end }}
 
-{{ define "dateRange" }}
-    <span class="sidebar-item date">
-        {{- if (eq .startDate .endDate) -}}
-            {{- if .startDate -}}
-                <span class="only-date">{{ dateFormat "Jan 2006" .startDate }}</span>
-            {{- end -}}
-        {{- else -}}
-            {{- if .startDate -}}
-                <span class="start-date">{{ dateFormat "Jan 2006" .startDate }}</span>
-            {{- else -}}
-                <span class="start-date"></span>
-            {{- end -}}
-
-            {{- if .endDate -}}
-                <span class="end-date">{{ dateFormat "Jan 2006" .endDate }}</span>
-            {{- else -}}
-                <span class="end-date">Present</span>
-            {{- end -}}
-        {{- end -}}  
-    </span>
-{{ end }}
-
-{{ define "link-icon" }}
-    <span class="print-hidden">&#8599;</span>
-{{ end }}
-
 {{ define "main" }}
     <section class="basics">
-        {{ with .Site.Params.basics }}
+        {{ with .Site.Params.personal }}
             <h1>{{ .name }}</h1>
             <div class="information">
                 <div>
@@ -61,192 +35,20 @@
                     {{- end -}}
                 </div>
             </div>
-            {{ with .summary }}
-                <div class="summary">{{ . | markdownify }}</div>
+            {{ with .content }}
+                <div class="content">{{ . | markdownify }}</div>
             {{ end }}
         {{ end }}
     </section>
-
-    <section>
-        <h2 class="header">Work</h2>
-        {{ range .Site.Params.work }}
-            <div class="collapsible">
-                <div class="sidebar">
-                    <span class="sidebar-item">
-                        {{ with .website }}
-                            <a href="{{ . }}">
-                        {{ end }}
-                        {{ .company }}
-                        {{ with .website }}
-                            {{ block "link-icon" . }}{{ end }}
-                            </a>
-                        {{ end }}
-                    </span>
-                    <span class="sidebar-item">{{ .position }}</span>
-                    {{ block "dateRange" . }}{{ end }}
-                </div>
-                <div class="main">
-                    {{ with .summary }}
-                        <div>{{ . | markdownify }}</div>
-                    {{ end }}
-                    {{ with .highlights }}
-                        <ol>
-                            {{ range . }}
-                                <li>{{ . | markdownify }}</li>
-                            {{ end }}
-                        </ol>
-                    {{ end }}
-                </div>
-            </div>
-        {{ end }}
-    </section>
-
-    <section>
-        <h2 class="header">Education</h2>
-        {{ range .Site.Params.education }}
-            <div class="collapsible">
-                <div class="sidebar">
-                    <span class="sidebar-item">{{ .area }} {{ .studyType }}</span>
-                    <span class="sidebar-item">{{ .institution }}</span>
-                    {{ block "dateRange" . }}{{ end }}
-                </div>
-                <div class="main">
-                    {{ with .summary }}
-                        <div>{{ . }}</div>
-                    {{ end }}
-                    {{ with .courses }}
-                        <ul>
-                            {{ range . }}
-                                <li>{{ . | markdownify }}</li>
-                            {{ end }}
-                        </ul>
-                    {{ end }}
-                </div>
-            </div>
-        {{ end }}
-    </section>
-
-    <section>
-        <h2 class="header">Projects</h2>
-        {{ range .Site.Params.projects }}
-            <div class="collapsible">
-                <div class="sidebar">
-                    <span class="sidebar-item">
-                        {{ with .website }}
-                            <a href="{{ . }}">
-                        {{ end }}
-                        {{ .name }}
-                        {{ with .website }}
-                            {{ block "link-icon" . }}{{ end }}
-                            </a>
-                        {{ end }}
-                    </span>
-                    <span class="sidebar-keywords">
-                        {{ range .keywords }}
-                            <span class="keyword">{{ . }}</span>
-                        {{ end }}
-                    </span>
-                </div>
-                <div class="main">
-                    {{ with .summary }}
-                        <div>{{ . | markdownify }}</div>
-                    {{ end }}
-                </div>
-            </div>
-        {{ end }}
-    </section>
-
-
-    <section>
-        <h2 class="header">Skills</h2>
-        {{ range .Site.Params.skills }}
-            <div class="collapsible-minimal">
-                <div class="sidebar">
-                    <span class="name">{{ .name }}</span>
-                    {{ with .level }}
-                        &mdash;
-                        <span class="level">{{ . }}</span>
-                    {{ end }}
-                </div>
-                <div class="main">
-                    {{ range .keywords }}
-                        <span class="keyword">{{ . }}</span>
-                    {{ end }}
-                </div>
-            </div>
-        {{ end }}
-    </section>
-
-    <section>
-        <h2 class="header">Volunteering</h2>
-        {{ range .Site.Params.volunteer }}
-            <div class="collapsible">
-                <div class="sidebar">
-                    <span class="sidebar-item">
-                        {{ with .website }}
-                            <a href="{{ . }}">
-                        {{ end }}
-                        {{ .organization }}
-                        {{ with .website }}
-                            {{ block "link-icon" . }}{{ end }}
-                            </a>
-                        {{ end }}
-                    </span>
-                    <span class="sidebar-item">{{ .position }}</span>
-                    {{ block "dateRange" . }}{{ end }}
-                </div>
-                <div class="main">
-                    {{ with .summary }}
-                        <div>{{ . | markdownify }}</div>
-                    {{ end }}
-                    {{ with .highlights }}
-                        <ol>
-                            {{ range . }}
-                                <li>{{ . | markdownify }}</li>
-                            {{ end }}
-                        </ol>
-                    {{ end }}
-                </div>
-            </div>
-        {{ end }}
-    </section>
-
-    <section>
-        <h2 class="header">Achievements</h2>
-        <div class="grid">
-        {{ range .Site.Params.achievements }}
-            <div class="grid-item">
-                <div class="top">
-                    <span class="top-item">{{ .title }}</span>
-                    <span class="top-item">{{ .awarder }}</span>
-                    <span class="top-item">{{ dateFormat "Jan 2006" .date }}</span>
-                </div>
-                <div class="main">{{ .summary | markdownify }}</div>
-            </div>
-        {{ end }}
-        </div>
-    </section>
-
-    <section>
-        <h2 class="header">Interests</h2>
-        {{ range .Site.Params.interests }}
-            <div class="collapsible">
-                <div class="sidebar">
-                    <span class="sidebar-item">{{ .name }}</span>
-                    <div class="keywords">
-                        {{ range .keywords }}
-                            <span class="keyword">{{ . }}</span>
-                        {{ end }}
-                    </div>
-                </div>
-                <div class="main">
-                    {{ with .summary }}
-                        <div>{{ . | markdownify }}</div>
-                    {{ end }}
-                </div>
-            </div>
-        {{ end }}
-    </section>
-
-    {{ .Content }}
+    
+    {{ range .Site.Params.sections }}
+        <section>
+            <h2 class="header">{{ .name }}</h2>
+            {{ if .entries }}
+                {{ partial "sections/entries" . }}
+            {{ else if .boxes }}
+                {{ partial "sections/boxes" . }}
+            {{ end }}
+        </section>
+    {{ end }}
 {{ end }}

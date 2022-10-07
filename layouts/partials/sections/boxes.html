@@ -1,0 +1,27 @@
+<div class="grid">
+    {{ range .boxes }}
+        <div class="grid-item">
+            <div class="top">
+                {{ if .title }}
+                    <span class="top-item">
+                        {{ with .website }}
+                            <a href="{{ . }}">
+                        {{ end }}
+                        {{ .title | markdownify }}
+                        {{ with .website }}
+                            <span class="print-hidden">&#8599;</span>
+                            </a>
+                        {{ end }}
+                    </span>
+                {{ end }}
+                {{ if .subtitle }}
+                    <span class="top-item">{{ .subtitle }}</span>
+                {{ end }}
+                {{ if .endDate }}
+                    <span class="top-item">{{ .endDate | dateFormat "Jan 2006" }}</span>
+                {{ end }}
+            </div>
+            <div class="main">{{ .content | markdownify }}</div>
+        </div>
+    {{ end }}
+</div>

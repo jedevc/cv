@@ -1,0 +1,21 @@
+{{ if or .startDate .endDate }}
+    <span class="sidebar-item date">
+        {{- if (eq .startDate .endDate) -}}
+            {{- if .startDate -}}
+                <span class="only-date">{{ dateFormat "Jan 2006" .startDate }}</span>
+            {{- end -}}
+        {{- else -}}
+            {{- if .startDate -}}
+                <span class="start-date">{{ dateFormat "Jan 2006" .startDate }}</span>
+            {{- else -}}
+                <span class="start-date"></span>
+            {{- end -}}
+
+            {{- if .endDate -}}
+                <span class="end-date">{{ dateFormat "Jan 2006" .endDate }}</span>
+            {{- else -}}
+                <span class="end-date">Present</span>
+            {{- end -}}
+        {{- end -}}  
+    </span>
+{{ end }}

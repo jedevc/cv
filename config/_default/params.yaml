@@ -1,4 +1,4 @@
-basics:
+personal:
   email: "me@jedevc.com"
   label: "Software Engineer"
   location:
@@ -8,233 +8,218 @@ basics:
     region: ""
   name: "Justin Chadwell"
   phone: ""
-  summary: "Software Engineer working on awesome projects 🎉"
+  content: "Software Engineer working on awesome projects 🎉"
   website: "https://jedevc.com"
+    
+sections:
+  - name: Work
+    entries:
+      - title: "Docker"
+        subtitle: "Software Engineer"
+        startDate: "2022-04-05"
+        endDate: ""
+        website: https://docker.com
+        content: |
+          - Improving software supply chain security with the build team.
+          - Contributing to various Docker-operated open source projects.
+      - title: "Pexip"
+        subtitle: "Software Engineer"
+        startDate: "2021-09-01"
+        endDate: "2022-03-25"
+        website: https://pexip.com
+        content: |
+          - Designed internal fuzzing and static analysis pipelines to automate
+            bug hunting and increase visibility of security issues.
+          - Maintained build systems, CI/CD infrastructure and developer tooling
+            to enable developer productivity and communication across teams.
+          - Investigated complex low-level video codec issues from production
+            environments.
+          - Assisted in hiring processes by reviewing homeworks and interviewing
+            candidates.
+      - title: "Progressive Access"
+        subtitle: "Software Engineer"
+        startDate: "2019-11-01"
+        endDate: "2022-01-01"
+        website: https://progressiveaccess.com
+        content: |
+          - Designed and developed a new Jamstack home site and blog from scratch.
+          - Created a frontend as well as authentication, payment and mailing
+            microservices for the Live Chemistry SaaS platform.
+          - Wrote CI/CD pipelines utilizing Terraform and Docker to automate
+            deployment.
+      - title: "ARM"
+        subtitle: "Software Intern"
+        startDate: "2019-06-01"
+        endDate: "2019-09-01"
+        website: https://www.arm.com/
+        content: |
+          - Introduced support for next-gen ARM security features in open-source
+            firmware.
+          - Presented to engineers in the Open Source Software Group about using the
+            Undefined Behavior Sanitizer in firmware, an area I researched while
+            interning.
 
-education:
-  - area: "Computer Science"
-    studyType: "BSc"
-    institution: "University of Birmingham"
-    startDate: "2018-09-01"
-    endDate: "2021-07-01"
-    courses:
-      - "[**97%**] Advanced Networking"
-      - "[**96%**] Algorithms and Complexity"
-      - "[**95%**] Programming Languages"
-      - "[**94%**] Security of Real-World Systems"
-      - "[**86%**] Final Year Project"
-  - area: ""
-    studyType: "A levels"
-    institution: "KISC"
-    startDate: "2017-08-01"
-    endDate: "2018-06-01"
-    courses:
-      - "[**A\\***] Computer Science"
-      - "[**A\\***] Mathematics"
-      - "[**A**] English Language"
+  - name: Education
+    entries:
+      - title: "Computer Science BSc"
+        subtitle: "University of Birmingham"
+        startDate: "2018-09-01"
+        endDate: "2021-07-01"
+        content: |
+          - [**97%**] Advanced Networking
+          - [**96%**] Algorithms and Complexity
+          - [**95%**] Programming Languages
+          - [**94%**] Security of Real-World Systems
+          - [**86%**] Final Year Project
+      - title: "A Levels"
+        subtitle: "KISC"
+        startDate: "2017-08-01"
+        endDate: "2018-06-01"
+        content: |
+          - [**A\***] Computer Science
+          - [**A\***] Mathematics
+          - [**A**] English Language
 
-projects:
-  - name: "Hack The Midlands CTF"
-    website: "https://github.com/jedevc/HackTheMidlandsCTF20"
-    keywords:
-      - "Hacking"
-      - "Linux"
-    summary: |
-      Capture the Flag competition for [Hack The Midlands](https://hackthemidlands.com/)
-      4.0 and 5.0.
+  - name: Projects
+    entries:
+      - title: "Hack The Midlands CTF"
+        website: "https://github.com/jedevc/HackTheMidlandsCTF20"
+        keywords:
+          - "Hacking"
+          - "Linux"
+        content: |
+          Capture the Flag competition for [Hack The Midlands](https://hackthemidlands.com/)
+          4.0 and 5.0.
 
-      I developed a CTF mini-event over both years, involving chatbots, DNS
-      servers, hackable games, providing an introduction to computer security
-      for attendees.
-  - name: "AppArea"
-    website: "https://github.com/jedevc/apparea"
-    keywords:
-      - "Go"
-      - "Linux"
-    summary: |
-      An entirely open-source port forwarding helper from localhost built using
-      SSH tunnels.
+          I developed a CTF mini-event over both years, involving chatbots, DNS
+          servers, hackable games, providing an introduction to computer security
+          for attendees.
+      - title: "AppArea"
+        website: "https://github.com/jedevc/apparea"
+        keywords:
+          - "Go"
+          - "Linux"
+        content: |
+          An entirely open-source port forwarding helper from localhost built using
+          SSH tunnels.
 
-      I built it out of a frustration that none of the existing tools in the area were
-      open source or had minimal client-side dependencies.
-  - name: "bhamcal"
-    website: "https://github.com/jedevc/bhamcal"
-    keywords:
-      - "Python"
-      - "Google Cloud"
-    summary: |
-      Timetable extractor and converter for University of Birmingham web
-      timetables.
+          I built it out of a frustration that none of the existing tools in the area were
+          open source or had minimal client-side dependencies.
+      - title: "bhamcal"
+        website: "https://github.com/jedevc/bhamcal"
+        keywords:
+          - "Python"
+          - "Google Cloud"
+        content: |
+          Timetable extractor and converter for University of Birmingham web
+          timetables.
 
-      The default university timetable interface was complex to navigate, so I
-      constructed a command line tool to extract it into a variety of formats.
+          The default university timetable interface was complex to navigate, so I
+          constructed a command line tool to extract it into a variety of formats.
+  
+  - name: Skills
+    minimal: true
+    entries:
+      - title: "Scripting -- Advanced"
+        keywords:
+          - "Python"
+          - "Bash"
+          - "Docker"
+      - title: "Systems -- Intermediate"
+        keywords:
+          - "C/C++"
+          - "Go"
+          - "Rust"
+          - "Linux"
+          - "Compilers"
+          - "Codecs"
+      - title: "Security -- Intermediate"
+        keywords:
+          - "Fuzzing"
+          - "Reverse engineering"
+          - "Static analysis"
+      - title: "Frontend Development -- Intermediate"
+        keywords:
+          - "HTML/CSS"
+          - "Javascript"
+          - "React"
+            
+  - name: Volunteering
+    entries:
+      - title: "AFNOM"
+        subtitle: "Co-lead"
+        website: "http://afnom.net/"
+        startDate: "2018-10-01"
+        endDate: "2021-07-01"
+        content: |
+          - Represented the university in CTFs as a top 10 ranked UK team.
+          - Developed WhatTheCTF competitions for UoB's School of Computer
+            Science and [INRIA's 2019 SILM summer school](https://silm-school.inria.fr/ctf/).
+          - Managed infrastructure on Google Cloud Platform and Hetzner using
+            Docker and Kubernetes.
+      - title: "Computer Science Society"
+        subtitle: "Vice President"
+        website: "http://cssbham.com/"
+        startDate: "2019-03-01"
+        endDate: "2020-06-01"
+        content: |
+          - Built up the CompSci community at UoB by encouraging participation in
+            society events, and enhancing relations with societies at other
+            Universities.
+          - Organized and ran a number of events, including hackathons, talks and
+            workshops.
+          - Re-designed the society's website to engage students and provide
+            a hub for important information and news.
+          - Became a Google Student Developer Club Lead to include more workshops
+            and talks.
+      - title: "HackTheMidlands"
+        subtitle: "Organizer"
+        website: "http://hackthemidlands.com/"
+        startDate: "2019-06-01"
+        endDate: "2020-10-01"
+        content: |
+          - Helped plan and organize a hackathon of over 250 attendees.
+          - Built and deployed a number of web services to enhance attendee
+            experience.
+          - Designed and ran a CTF, accessible to attendees of all ages and skill
+            levels.
 
-work:
-  - company: "Docker"
-    position: "Software Engineer"
-    startDate: "2022-04-05"
-    endDate: ""
-    summary: ""
-    website: https://docker.com
-    highlights:
-      - "Improving software supply chain security with the build team."
-      - "Contributing to various Docker-operated open source projects."
-  - company: "Pexip"
-    position: "Software Engineer"
-    startDate: "2021-09-01"
-    endDate: "2022-03-25"
-    summary: ""
-    website: https://pexip.com
-    highlights:
-      - "Designed internal fuzzing and static analysis pipelines to automate
-        bug hunting and increase visibility of security issues."
-      - "Maintained build systems, CI/CD infrastructure and developer tooling
-        to enable developer productivity and communication across teams."
-      - "Investigated complex low-level video codec issues from production
-        environments."
-      - "Assisted in hiring processes by reviewing homeworks and interviewing
-        candidates."
-  - company: "Progressive Access"
-    position: "Software Engineer"
-    startDate: "2019-11-01"
-    endDate: "2022-01-01"
-    website: https://progressiveaccess.com
-    summary: ""
-    highlights:
-      - "Designed and developed a new Jamstack home site and blog from scratch."
-      - "Created a frontend as well as authentication, payment and mailing
-        microservices for the Live Chemistry SaaS platform."
-      - "Wrote CI/CD pipelines utilizing Terraform and Docker to automate
-        deployment."
-  # - company: "Pexip"
-  #   position: "Software Intern"
-  #   startDate: "2020-05-29"
-  #   endDate: "2020-09-23"
-  #   summary: ""
-  #   website: https://dev.pexip.com
-  #   highlights:
-  #     - "Added instrumentation to Pexip Infinity to allow for static analysis
-  #       and fuzzing."
-  #     - "Improved testing and CI process by adding support for LLVM builds."
-  #     - "Fixed security-sensitive memory corruption bugs in gstreamer plugins."
-  - company: "ARM"
-    position: "Software Intern"
-    startDate: "2019-06-01"
-    endDate: "2019-09-01"
-    summary: ""
-    website: https://www.arm.com/
-    highlights:
-      - "Introduced support for next-gen ARM security features in open-source
-        firmware."
-      - "Presented to engineers in the Open Source Software Group about using the
-        Undefined Behavior Sanitizer in firmware, an area I researched while
-        interning."
+  - name: Achievements
+    boxes:
+      - title: "Top Marks in BSc Computer Science" 
+        subtitle: "University of Birmingham"
+        endDate: "2021-07-15"
+        content: |
+          I scored the highest total mark in my graduating cohort for BSc Computer
+          Science in 2021.
+      - title: "CSS and AFNOM Member of the Year"
+        subtitle: "University of Birmingham"
+        endDate: "2021-07-22"
+        content: |
+          I was member of the year for both [CSS](https://cssbham.com) and
+          [AFNOM](https://afnom.net), which I've been an active part of since my
+          first year.
+      - title: "Great Achievement in EPS (shortlisted)"
+        subtitle: "University of Birmingham"
+        endDate: "2021-07-22"
+        content: |
+          I was recognized for my contributions to the EPS college for my
+          volunteering work.
 
-skills:
-  - name: "Scripting"
-    level: "Advanced"
-    keywords:
-      - "Python"
-      - "Bash"
-      - "Docker"
-  - name: "Systems"
-    level: "Intermediate"
-    keywords:
-      - "C/C++"
-      - "Go"
-      - "Rust"
-      - "Linux"
-      - "Compilers"
-      - "Codecs"
-  - name: "Security"
-    level: "Intermediate"
-    keywords:
-      - "Fuzzing"
-      - "Reverse engineering"
-      - "Static analysis"
-  - name: "Frontend Development"
-    level: "Intermediate"
-    keywords:
-      - "HTML/CSS"
-      - "Javascript"
-      - "React"
-
-volunteer:
-  - organization: "AFNOM"
-    position: "Co-lead"
-    website: "http://afnom.net/"
-    startDate: "2018-10-01"
-    endDate: "2021-07-01"
-    summary: ""
-    highlights:
-      - "Represented the university in CTFs as a top 10 ranked UK team."
-      - "Developed WhatTheCTF competitions for UoB's School of Computer
-        Science and [INRIA's 2019 SILM summer school](https://silm-school.inria.fr/ctf/)."
-      - "Managed infrastructure on Google Cloud Platform and Hetzner using
-        Docker and Kubernetes."
-  - organization: "Computer Science Society"
-    position: "Vice President"
-    website: "http://cssbham.com/"
-    startDate: "2019-03-01"
-    endDate: "2020-06-01"
-    summary: ""
-    highlights:
-      - "Built up the CompSci community at UoB by encouraging participation in
-        society events, and enhancing relations with societies at other
-        Universities."
-      - "Organized and ran a number of events, including hackathons, talks and
-        workshops."
-      - "Re-designed the society's website to engage students and provide
-        a hub for important information and news."
-      - "Became a Google Student Developer Club Lead to include more workshops
-        and talks."
-  - organization: "HackTheMidlands"
-    position: "Organizer"
-    website: "http://hackthemidlands.com/"
-    startDate: "2019-06-01"
-    endDate: "2020-10-01"
-    summary: ""
-    highlights:
-      - "Helped plan and organize a hackathon of over 250 attendees."
-      - "Built and deployed a number of web services to enhance attendee
-        experience."
-      - "Designed and ran a CTF, accessible to attendees of all ages and skill
-        levels."
-
-achievements:
-  - awarder: "University of Birmingham"
-    title: "Top Marks in BSc Computer Science"
-    date: "2021-07-15"
-    summary: |
-      I scored the highest total mark in my graduating cohort for BSc Computer
-      Science in 2021.
-  - awarder: "University of Birmingham"
-    title: "CSS and AFNOM Member of the Year"
-    date: "2021-07-22"
-    summary: |
-      I was member of the year for both [CSS](https://cssbham.com) and
-      [AFNOM](https://afnom.net), which I've been an active part of since my
-      first year.
-  - awarder: "University of Birmingham"
-    title: "Great Achievement in EPS (shortlisted)"
-    date: "2021-07-22"
-    summary: |
-      I was recognized for my contributions to the EPS college for my
-      volunteering work.
-
-interests:
-  - name: "Tech"
-    summary: |
-      I enjoy tinkering with a number of technical projects at home whenever I
-      have a few spare moments. I'm also attempting to branch into blogging
-      more regularly, producing technical content and tutorials for both
-      beginners and experienced developers.
-  - name: "Gaming"
-    summary: |
-      I love playing games, from a variety of board and card games with a group
-      of friends, all the way to single-player games on my computer at home (I
-      do love a good roguelike).
-  - name: "Food"
-    summary: |
-      I'm always up for trying new food, and regularly try and find new places
-      to eat out wherever I am. I also really enjoy cooking at home for fun!
+  - name: Interests
+    entries:
+      - title: "Tech"
+        content: |
+          I enjoy tinkering with a number of technical projects at home whenever I
+          have a few spare moments. I'm also attempting to branch into blogging
+          more regularly, producing technical content and tutorials for both
+          beginners and experienced developers.
+      - title: "Gaming"
+        content: |
+          I love playing games, from a variety of board and card games with a group
+          of friends, all the way to single-player games on my computer at home (I
+          do love a good roguelike).
+      - title: "Food"
+        content: |
+          I'm always up for trying new food, and regularly try and find new places
+          to eat out wherever I am. I also really enjoy cooking at home for fun!
