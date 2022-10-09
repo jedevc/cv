@@ -29,7 +29,7 @@ body {
     margin-top: 0.2em;
     margin-bottom: 0.5em;
   }
-  
+
   strong {
     font-weight: bold;
   }
@@ -68,7 +68,7 @@ footer {
     margin: 0;
     bottom: 0;
   }
-  
+
   .print-hidden {
     display: none;
   }
@@ -78,6 +78,7 @@ a {
   transition: 0.2s color;
   color: var(--highlight-link);
   font-weight: 600;
+  text-decoration: underline;
 
   &:visited {
     color: var(--highlight-link);
@@ -149,7 +150,7 @@ ul, ol {
         color: black !important;
       }
     }
-    
+
     .sidebar-item:nth-child(2) {
       font-style: italic;
     }
@@ -195,6 +196,14 @@ ul, ol {
     & > * {
       color: #666;
       font-style: italic;
+    }
+
+    .contact {
+      a {
+        color: inherit;
+        font-weight: inherit;
+        text-decoration: none;
+      }
     }
 
     .information-part {
@@ -270,7 +279,7 @@ section {
         #0000 5%,
         #0000 95%,
         #ffff 100%
-    ); 
+    );
 
     pointer-events: none;
   }
@@ -322,7 +331,7 @@ section {
       .top-item:first-child {
         font-weight: 600;
       }
-      
+
       .top-item:nth-child(2) {
         font-style: italic;
       }
@@ -355,7 +364,7 @@ section {
       }
     }
   }
-  
+
   @media only print {
     margin-bottom: 2em;
   }

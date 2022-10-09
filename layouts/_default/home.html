@@ -16,25 +16,16 @@
                 <div>
                     <a href="{{ .website }}">{{ .website }}</a>
                 </div>
-                <div>
+                <div class="contact">
                     {{- with .email -}}
-                        <div class="information-part">{{ . }}</div>
+                        <a class="information-part" href="mailto:{{ . }}">{{ . }}</a>
                     {{- end -}}
                     {{- with .phone -}}
                         <div class="information-part">{{ . }}</div>
                     {{- end -}}
                 </div>
-                <div>
-                    {{- with .location.address -}}
-                        <div class="information-part">{{ . }}</div>
-                    {{- end -}}
-                    {{- with .location.city -}}
-                        <div class="information-part">{{ . }}</div>
-                    {{- end -}}
-                    {{- with .location.region -}}
-                        <div class="information-part">{{ . }}</div>
-                    {{- end -}}
-                    {{- with .location.countryCode -}}
+                <div class="location">
+                    {{- range .location -}}
                         <div class="information-part">{{ . }}</div>
                     {{- end -}}
                 </div>

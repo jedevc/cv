@@ -6,6 +6,6 @@ $highlight: {{ .highlight }};
     --highlight-link: #{darken($highlight, 15%)};
     --highlight-link-visited: #{darken($highlight, 25%)};
 
-    --highlighted-text: inherit;
+    --highlighted-text: #{if(lightness($highlight)>30,black,white)};
 }
 {{ end }}
