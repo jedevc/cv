@@ -28,5 +28,5 @@ Build the site:
 
 This software is released under the UNLICENSE.
 
-The contents of `config/_default/config.toml` is personal information, and is
+The contents of the `config/` directory is personal information, and is
 withheld with all rights reserved.
