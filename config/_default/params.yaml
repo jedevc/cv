@@ -1,14 +1,9 @@
 personal:
   email: "me@jedevc.com"
-  label: "Software Engineer"
-  location:
-    address: ""
-    city: ""
-    countryCode: "UK"
-    region: ""
+  location: ["Birmingham", "UK"]
   name: "Justin Chadwell"
   phone: ""
-  content: "Software Engineer working on awesome projects 🎉"
+  content: "Software Engineer working on awesome open-source projects 🎉"
   website: "https://jedevc.com"
 
 styles:
@@ -23,8 +18,10 @@ sections:
         endDate: ""
         website: https://docker.com
         content: |
-          - Improving software supply chain security with the build team.
-          - Contributing to various Docker-operated open source projects.
+          - Supporting the open-source ecosystem by maintaining popular
+            open-source projects, Buildx and BuildKit.
+          - Improving software supply chain security by integrating in-toto
+            attestations and SBOMs into BuildKit.
       - title: "Pexip"
         subtitle: "Software Engineer"
         startDate: "2021-09-01"
@@ -149,6 +146,17 @@ sections:
 
   - name: Volunteering
     entries:
+      - title: "HackTheMidlands"
+        subtitle: "Organizer"
+        website: "http://hackthemidlands.com/"
+        startDate: "2019-06-01"
+        endDate: ""
+        content: |
+          - Helped plan and organize a hackathon of over 250 attendees.
+          - Developed a [custom virtual badge system](https://github.com/jedevc/HackTheMidlandsBadges22)
+            to allow users to customize their badges using Lua.
+          - Designed and ran a security-focused CTF, accessible to attendees of
+            all ages and skill levels.
       - title: "AFNOM"
         subtitle: "Co-lead"
         website: "http://afnom.net/"
@@ -175,17 +183,6 @@ sections:
             a hub for important information and news.
           - Became a Google Student Developer Club Lead to include more workshops
             and talks.
-      - title: "HackTheMidlands"
-        subtitle: "Organizer"
-        website: "http://hackthemidlands.com/"
-        startDate: "2019-06-01"
-        endDate: "2020-10-01"
-        content: |
-          - Helped plan and organize a hackathon of over 250 attendees.
-          - Built and deployed a number of web services to enhance attendee
-            experience.
-          - Designed and ran a CTF, accessible to attendees of all ages and skill
-            levels.
 
   - name: Achievements
     boxes:
