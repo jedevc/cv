@@ -18,8 +18,9 @@ sections:
         endDate: ""
         website: https://docker.com
         content: |
-          - Supporting the open-source ecosystem by maintaining popular
-            open-source projects, Buildx and BuildKit.
+          - Supporting the open-source ecosystem by developing and maintaining
+            popular open-source projects, [Buildx](https://github.com/docker/buildx)
+            and [BuildKit](https://github.com/moby/buildkit).
           - Improving software supply chain security by integrating in-toto
             attestations and SBOMs into BuildKit.
       - title: "Pexip"
@@ -105,44 +106,31 @@ sections:
 
           I built it out of a frustration that none of the existing tools in the area were
           open source or had minimal client-side dependencies.
-      - title: "bhamcal"
-        website: "https://github.com/jedevc/bhamcal"
-        keywords:
-          - "Python"
-          - "Google Cloud"
-        content: |
-          Timetable extractor and converter for University of Birmingham web
-          timetables.
-
-          The default university timetable interface was complex to navigate, so I
-          constructed a command line tool to extract it into a variety of formats.
 
   - name: Skills
     minimal: true
     entries:
-      - title: "Scripting -- Advanced"
-        keywords:
-          - "Python"
-          - "Bash"
-          - "Docker"
-      - title: "Systems -- Intermediate"
+      - title: "Systems"
         keywords:
           - "C/C++"
           - "Go"
           - "Rust"
           - "Linux"
-          - "Compilers"
-          - "Codecs"
-      - title: "Security -- Intermediate"
+      - title: "Scripting"
         keywords:
-          - "Fuzzing"
-          - "Reverse engineering"
-          - "Static analysis"
-      - title: "Frontend Development -- Intermediate"
+          - "Python"
+          - "Bash"
+          - "Docker"
+      - title: "Frontend"
         keywords:
           - "HTML/CSS"
           - "Javascript"
           - "React"
+      - title: "Security"
+        keywords:
+          - "Fuzzing"
+          - "Reverse engineering"
+          - "Static analysis"
 
   - name: Volunteering
     entries:
