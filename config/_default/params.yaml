@@ -15,7 +15,7 @@ sections:
       - title: "Docker"
         subtitle: "Software Engineer"
         startDate: "2022-04-05"
-        endDate: ""
+        endDate: "2023-09-08"
         website: https://docker.com
         content: |
           - Supporting the open-source ecosystem by developing and maintaining
