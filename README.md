@@ -1,7 +1,5 @@
 # CV
 
-![Netlify](https://img.shields.io/netlify/0b5de811-e430-4d6d-876d-4bf3ee8c08be)
-
 My personal CV, at <https://cv.jedevc.com>.
 
 The single page on the site is generated using the parameters in
