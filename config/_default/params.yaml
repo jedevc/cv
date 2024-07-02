@@ -12,16 +12,29 @@ styles:
 sections:
   - name: Work
     entries:
+      - title: "Dagger"
+        subtitle: "Software Engineer"
+        startDate: "2022-09-05"
+        endDate: ""
+        website: https://dagger.io
+        content: |
+          - Working in the core dev team to build out new [Dagger](https://github.com/dagger/dagger)
+            engine features, and resolve complex production issues for
+            customers.
+          - Improving automation in our own dog-fooded CI, with a focus on low
+            touch releases.
+          - Managing release process and cadence for each fortnightly release,
+            including curating milestones and coordinating communication.
       - title: "Docker"
         subtitle: "Software Engineer"
         startDate: "2022-04-05"
         endDate: "2023-09-08"
         website: https://docker.com
         content: |
-          - Supporting the open-source ecosystem by developing and maintaining
+          - Supported the open-source ecosystem by developing and maintaining
             popular open-source projects, [Buildx](https://github.com/docker/buildx)
             and [BuildKit](https://github.com/moby/buildkit).
-          - Improving software supply chain security by integrating in-toto
+          - Improved software supply chain security by integrating in-toto
             attestations and SBOMs into BuildKit.
       - title: "Pexip"
         subtitle: "Software Engineer"
@@ -138,7 +151,7 @@ sections:
         subtitle: "Organizer"
         website: "http://hackthemidlands.com/"
         startDate: "2019-06-01"
-        endDate: ""
+        endDate: "2022-10-01"
         content: |
           - Helped plan and organize a hackathon of over 250 attendees.
           - Developed a [custom virtual badge system](https://github.com/jedevc/HackTheMidlandsBadges22)
