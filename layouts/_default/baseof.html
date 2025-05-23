@@ -6,7 +6,7 @@
     <title>{{ .Site.Title }}</title>
 
     {{ $sass := resources.Get "style/reset.scss" }}
-    {{ $style := $sass | resources.ToCSS }}
+    {{ $style := $sass | css.Sass }}
     <link rel="stylesheet" type="text/css" href="{{ $style.RelPermalink }}" />
 
     {{ block "head" . }}{{ end }}
