@@ -206,6 +206,7 @@ ul, ol {
       }
     }
 
+
     .information-part {
       display: inline-block;
     }
@@ -214,6 +215,27 @@ ul, ol {
         content: ", ";
       }
     }
+  }
+
+  .socials {
+    justify-content: center;
+    margin-top: 1em;
+    a {
+      text-decoration: none;
+    }
+  }
+  .social {
+    margin: 0.2em;
+
+    display: inline-flex;
+    height: 1em;
+    gap: 0.4em;
+    align-items: center;
+    img {
+      height: 100%;
+    }
+
+    @extend .keyword;
   }
 
   .content {

@@ -3,8 +3,11 @@ personal:
   location: ["Birmingham", "UK"]
   name: "Justin Chadwell"
   phone: ""
-  content: "Software Engineer working on awesome open-source projects 🎉"
+  content: "Software engineer building better developer tooling ⚒️"
   website: "https://jedevc.com"
+  socials:
+    github: jedevc
+    linkedin: jedevc
 
 styles:
   highlight: "#ffd832"

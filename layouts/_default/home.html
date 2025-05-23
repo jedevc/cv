@@ -30,8 +30,26 @@
                     {{- end -}}
                 </div>
             </div>
+
             {{ with .content }}
                 <div class="content">{{ . | markdownify }}</div>
+            {{ end }}
+
+            {{ with .socials }}
+                <div class="socials">
+                    {{- with .github -}}
+                        <a class="social" href="https://github.com/{{ . }}">
+                            <img src="/icons/github-48x48.png" />
+                            {{- . -}}
+                        </a>
+                    {{- end -}}
+                    {{- with .github -}}
+                        <a class="social" href="https://linkedin.com/in/{{ . }}">
+                            <img src="/icons/linkedin-50x50.png" />
+                            {{- . -}}
+                        </a>
+                    {{- end -}}
+                </div>
             {{ end }}
         {{ end }}
     </section>
