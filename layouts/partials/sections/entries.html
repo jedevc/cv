@@ -4,25 +4,24 @@
         <div class="sidebar">
             {{ if .title }}
                 <span class="sidebar-item">
-                    {{ with .website }}
-                        <a href="{{ . }}">
-                    {{ end }}
-                    {{ .title | markdownify }}
-                    {{ with .website }}
-                        <span class="print-hidden">&#129149;</span>
-                        </a>
-                    {{ end }}
+                    {{- if .website -}}
+                        <a href="{{ .website }}">{{ .title | markdownify }}</a>
+                    {{- else -}}
+                        {{ .title | markdownify }}
+                    {{- end -}}
                 </span>
             {{ end }}
             {{ if .subtitle }}
                 <span class="sidebar-item">{{ .subtitle | markdownify }}</span>
             {{ end }}
             {{ partial "components/date-range" . }}
-            <span class="sidebar-keywords">
-                {{ range .keywords }}
-                    <span class="keyword">{{ . | markdownify }}</span>
-                {{ end }}
-            </span>
+            {{ with .keywords }}
+                <span class="sidebar-keywords">
+                    {{ range . }}
+                        <span class="keyword">{{ . | markdownify }}</span>
+                    {{ end }}
+                </span>
+            {{ end }}
         </div>
         <div class="main">
             <div>{{ .content | markdownify }}</div>

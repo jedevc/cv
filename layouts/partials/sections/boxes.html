@@ -4,13 +4,10 @@
             <div class="top">
                 {{ if .title }}
                     <span class="top-item">
-                        {{ with .website }}
-                            <a href="{{ . }}">
-                        {{ end }}
-                        {{ .title | markdownify }}
-                        {{ with .website }}
-                            <span class="print-hidden">&#129149;</span>
-                            </a>
+                        {{ if .website }}
+                            <a href="{{ .website }}">{{ .title | markdownify }}</a>
+                        {{ else }}
+                            {{ .title | markdownify }}
                         {{ end }}
                     </span>
                 {{ end }}

@@ -69,8 +69,8 @@ footer {
     bottom: 0;
   }
 
-  .print-hidden {
-    display: none;
+  a {
+    text-decoration: none !important;
   }
 }
 
@@ -146,18 +146,12 @@ ul, ol {
     .sidebar-item:first-child {
       font-weight: 600;
       a {
-        text-decoration: none;
         color: black !important;
       }
     }
 
     .sidebar-item:nth-child(2) {
       font-style: italic;
-    }
-
-    .sidebar-item:last-child {
-      font-weight: normal;
-      font-style: normal;
     }
 
     .sidebar-keywords {
@@ -182,6 +176,7 @@ ul, ol {
 
       & > .sidebar-item {
         &:not(:last-child)::after {
+          margin-left: 0;
           content: ".";
         }
       }
@@ -374,17 +369,6 @@ section {
 
   @media only screen and (max-width: 800px) {
     grid-template-columns: 1fr;
-
-    .award {
-      .top {
-        display: inline;
-        & > * {
-          &:not(:last-child)::after {
-            content: ".";
-          }
-        }
-      }
-    }
   }
 
   @media only print {
