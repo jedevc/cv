@@ -3,7 +3,7 @@ personal:
   location: ["Birmingham", "UK"]
   name: "Justin Chadwell"
   phone: ""
-  content: "Software engineer building better developer tooling ⚒️"
+  content: "Building next-gen dev tooling to ship fast *and* right ⚒️"
   website: "https://jedevc.com"
   socials:
     github: jedevc
@@ -21,16 +21,28 @@ sections:
         endDate: ""
         website: https://dagger.io
         content: |
-          - Worked in the core dev team to build out new [Dagger](https://github.com/dagger/dagger)
-            engine features and performance improvements.
+          - Worked in the core team to deliver major new [Dagger engine](https://github.com/dagger/dagger)
+            features and performance improvements, providing subject-matter
+            expertise for better native Git support, improved caching, and
+            integrations with docker/containerd, with over 700 authored + 1000
+            reviewed pull-requests touching almost every codebase component.
+          - Defined and led the release process and cadence for each
+            fortnightly release (personally cutting over 20), establishing
+            standards for milestones, communication, and backwards-compatibility
+            guarantees.
+          - Co-led a massive migration to a custom graph evaluator, integrating
+            a legacy DAG-based cache system with a new GraphQL-based cache,
+            improving scalability and maintainability.
+          - Improved automation in our own internal CI, with a focus on 
+            low-touch releases, bringing release preparation times down from an
+            entire day to half an hour.
           - Handled escalation of feature requests and resolution of complex
-            production issues for customers.
-          - Managed release process and cadence for each fortnightly release,
-            including curating milestones and coordinating internal communication.
-          - Improved automation in our own dog-fooded CI, with a focus on low
-            touch releases.
-          - Assisted with booth duty across multiple KubeCon EU/US events,
-            pitching, discussing and demoing Dagger to attendees.
+            production issues for high-priority users and customers.
+          - Mentored and upskilled junior engineers through structured
+            onboarding, technical guidance, and pair-programming.
+          - Assisted with booth duty across three KubeCon US/EU events,
+            pitching, discussing, and demoing Dagger to attendees.
+
       - title: "Docker"
         subtitle: "Software Engineer"
         startDate: "2022-04-05"
@@ -39,45 +51,47 @@ sections:
         content: |
           - Supported the open-source container ecosystem by developing and
             maintaining popular open-source projects, [Buildx](https://github.com/docker/buildx)
-            and [BuildKit](https://github.com/moby/buildkit).
+            and [BuildKit](https://github.com/moby/buildkit) to power the
+            `docker build` experience.
           - Improved software supply chain security by integrating in-toto
             attestations and SBOMs into BuildKit.
           - Prototyped and helped launch the Docker Build Cloud service for
-            remote buildkit compute.
+            remote BuildKit-powered compute.
+
       - title: "Pexip"
         subtitle: "Software Engineer"
         startDate: "2021-09-01"
         endDate: "2022-03-25"
         website: https://pexip.com
         content: |
-          - Maintained build systems, CI/CD infrastructure and developer tooling
-            to enable developer productivity and communication across teams.
+          - Maintained internal build systems, CI/CD infrastructure and
+            developer tooling to enable enhanced developer productivity.
           - Designed internal fuzzing and static analysis pipelines to automate
-            bug hunting and increase visibility of security issues.
+            bug hunting and increase the visibility of security issues.
           - Investigated complex low-level video codec issues from production
             environments.
+
       - title: "Progressive Access"
         subtitle: "Software Engineer"
         startDate: "2019-11-01"
         endDate: "2022-01-01"
         website: https://progressiveaccess.com
         content: |
-          - Designed and developed a new Jamstack home site and blog from scratch.
-          - Created a frontend as well as authentication, payment and mailing
+          - Created and managed frontend, authentication, payment, and mailing
             microservices for the Live Chemistry SaaS platform.
           - Wrote CI/CD pipelines utilizing Terraform and Docker to automate
             deployment.
+          - Designed and developed a new Jamstack home site and blog to be the
+            public face of the company.
+
       - title: "ARM"
         subtitle: "Software Intern"
         startDate: "2019-06-01"
         endDate: "2019-09-01"
         website: https://www.arm.com/
         content: |
-          - Introduced support for next-gen ARM security features in open-source
+          - Introduced support for next-generation ARM security features in open-source
             firmware.
-          - Presented to engineers in the Open Source Software Group about using the
-            Undefined Behavior Sanitizer in firmware, an area I researched while
-            interning.
 
   - name: Education
     entries:
@@ -86,55 +100,24 @@ sections:
         startDate: "2018-09-01"
         endDate: "2021-07-01"
         content: |
-          - [**97%**] Advanced Networking
-          - [**96%**] Algorithms and Complexity
-          - [**95%**] Programming Languages
-          - [**94%**] Security of Real-World Systems
-          - [**86%**] Final Year Project
-      - title: "A Levels"
-        subtitle: "KISC"
-        startDate: "2017-08-01"
-        endDate: "2018-06-01"
-        content: |
-          - [**A\***] Computer Science
-          - [**A\***] Mathematics
-          - [**A**] English Language
-
-  - name: Projects
-    entries:
-      - title: "Hack The Midlands CTF"
-        website: "https://github.com/jedevc/HackTheMidlandsCTF20"
-        keywords:
-          - "Hacking"
-          - "Linux"
-        content: |
-          Capture the Flag competition for [Hack The Midlands](https://hackthemidlands.com/)
-          4.0 and 5.0.
-
-          I developed a CTF mini-event over both years, involving chatbots, DNS
-          servers, hackable games, providing an introduction to computer security
-          for attendees.
-      - title: "AppArea"
-        website: "https://github.com/jedevc/apparea"
-        keywords:
-          - "Go"
-          - "Linux"
-        content: |
-          An entirely open-source port forwarding helper from localhost built using
-          SSH tunnels.
-
-          I built it out of a frustration that none of the existing tools in the area were
-          open source or had minimal client-side dependencies.
+          Bachelor of Science with First Class Honours.
 
   - name: Skills
     minimal: true
     entries:
       - title: "Systems"
         keywords:
-          - "C/C++"
           - "Go"
+          - "C/C++"
           - "Rust"
           - "Linux"
+      - title: "Platform"
+        keywords:
+          - "Docker"
+          - "Containerd"
+          - "Kubernetes"
+          - "GitHub Actions"
+          - "GitLab CI"
       - title: "Scripting"
         keywords:
           - "Python"
@@ -142,7 +125,8 @@ sections:
           - "Docker"
       - title: "Frontend"
         keywords:
-          - "HTML/CSS"
+          - "HTML"
+          - "CSS"
           - "Javascript"
           - "React"
       - title: "Security"
@@ -150,83 +134,43 @@ sections:
           - "Fuzzing"
           - "Reverse engineering"
           - "Static analysis"
+          - "Vulnerability scanning"
 
-  - name: Volunteering
-    entries:
-      - title: "HackTheMidlands"
-        subtitle: "Organizer"
-        website: "http://hackthemidlands.com/"
-        startDate: "2019-06-01"
-        endDate: "2022-10-01"
-        content: |
-          - Helped plan and organize a hackathon of over 250 attendees.
-          - Developed a [custom virtual badge system](https://github.com/jedevc/HackTheMidlandsBadges22)
-            to allow users to customize their badges using Lua.
-          - Designed and ran a security-focused CTF, accessible to attendees of
-            all ages and skill levels.
-      - title: "AFNOM"
-        subtitle: "Co-lead"
-        website: "http://afnom.net/"
-        startDate: "2018-10-01"
-        endDate: "2021-07-01"
-        content: |
-          - Represented the university in CTFs as a top 10 ranked UK team.
-          - Developed WhatTheCTF competitions for UoB's School of Computer
-            Science and [INRIA's 2019 SILM summer school](https://silm-school.inria.fr/ctf/).
-          - Managed infrastructure on Google Cloud Platform and Hetzner using
-            Docker and Kubernetes.
-      - title: "Computer Science Society"
-        subtitle: "Vice President"
-        website: "http://cssbham.com/"
-        startDate: "2019-03-01"
-        endDate: "2020-06-01"
-        content: |
-          - Built up the CompSci community at UoB by encouraging participation in
-            society events, and enhancing relations with societies at other
-            Universities.
-          - Organized and ran a number of events, including hackathons, talks and
-            workshops.
-          - Re-designed the society's website to engage students and provide
-            a hub for important information and news.
-          - Became a Google Student Developer Club Lead to include more workshops
-            and talks.
-
-  - name: Achievements
-    boxes:
-      - title: "Top Marks in BSc Computer Science"
-        subtitle: "University of Birmingham"
-        endDate: "2021-07-15"
-        content: |
-          I scored the highest total mark in my graduating cohort for BSc Computer
-          Science in 2021.
-      - title: "CSS and AFNOM Member of the Year"
-        subtitle: "University of Birmingham"
-        endDate: "2021-07-22"
-        content: |
-          I was member of the year for both [CSS](https://cssbham.com) and
-          [AFNOM](https://afnom.net), which I've been an active part of since my
-          first year.
-      - title: "Great Achievement in EPS (shortlisted)"
-        subtitle: "University of Birmingham"
-        endDate: "2021-07-22"
-        content: |
-          I was recognized for my contributions to the EPS college for my
-          volunteering work.
+  # - name: Achievements
+  #   boxes:
+  #     - title: "Top Marks in BSc Computer Science"
+  #       subtitle: "University of Birmingham"
+  #       endDate: "2021-07-15"
+  #       content: |
+  #         I scored the highest total mark in my graduating cohort for BSc Computer
+  #         Science in 2021.
+  #     - title: "CSS and AFNOM Member of the Year"
+  #       subtitle: "University of Birmingham"
+  #       endDate: "2021-07-22"
+  #       content: |
+  #         I was member of the year for both [CSS](https://cssbham.com) and
+  #         [AFNOM](https://afnom.net), which I've been an active part of since my
+  #         first year.
+  #     - title: "Great Achievement in EPS (shortlisted)"
+  #       subtitle: "University of Birmingham"
+  #       endDate: "2021-07-22"
+  #       content: |
+  #         I was recognized for my contributions to the EPS college for my
+  #         volunteering work.
 
   - name: Interests
     entries:
+      - title: "Food"
+        content: |
+          I love all things food, whether that's trying tasting menus
+          travelling around the UK, hosting friends and family, or even just
+          adding to my cookbook collection!
+      - title: "Gaming"
+        content: |
+          I play quite a lot of games, from board and card games with a group
+          of friends, all the way to single-player games on my computer at home (I
+          do love a good roguelike).
       - title: "Tech"
         content: |
           I enjoy tinkering with a number of technical projects at home whenever I
-          have a few spare moments. I'm also attempting to branch into blogging
-          more regularly, producing technical content and tutorials for both
-          beginners and experienced developers.
-      - title: "Gaming"
-        content: |
-          I love playing games, from a variety of board and card games with a group
-          of friends, all the way to single-player games on my computer at home (I
-          do love a good roguelike).
-      - title: "Food"
-        content: |
-          I'm always up for trying new food, and regularly try and find new places
-          to eat out wherever I am. I also really enjoy cooking at home for fun!
+          have a few spare moments (few and far between though they may be!)
