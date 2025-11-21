@@ -18,7 +18,7 @@ sections:
       - title: "Dagger"
         subtitle: "Software Engineer"
         startDate: "2023-09-05"
-        endDate: ""
+        endDate: "2025-10-31"
         website: https://dagger.io
         content: |
           - Worked in the core team to deliver major new [Dagger engine](https://github.com/dagger/dagger)
